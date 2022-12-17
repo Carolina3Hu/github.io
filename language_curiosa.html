@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Homepage</title>
+</head>
+
+<body id="top">
+	<header>
+		<!----------------------company logo e pesquisa----------------------->
+		<div id="logoSearch" class="mobile-centrar">
+			<nav class="home_pesquisa">
+				<div class="tooltip">
+					<a href="index.html" ><img src="./materiais/LOGO.png" alt="" width="80" class="home"></a>
+					<!--Adicionar logo-->
+					<span class="tooltiptext">Início</span>
+				</div>
+				<!--SEARCH-->
+				<div class="search-container">
+					<form>
+						<input type="text" placeholder="Pesquisar..." name="Pesquisar">
+						<button class="search"><img src="./icons/search-solid.svg" alt="" width="15"></button><!--下载图片-->
+					</form>
+				</div>
+			</nav>
+		</div>
+
+			</header>
+
+
+		<!---------------------------Desktop menu-------------------------------->
+		<nav class="topnav">
+			<a href="index.html">Início</a>
+			<a href="noticias.html">Notícias</a>
+			<a href="objectivos.html">Objetivos</a>
+			<a href="comoajudar.html">Como ajudar</a>
+			<a href="sobrenos.html">Sobre nós</a>
+			<a href="sabermais.html">Saber mais</a>
+		</nav>
+		<!------------------------------Mobile Menu ------------------------------------->
+			<nav id="mobileMenu">
+				<div class="mobile mobile-two">
+					<div class="header">
+						<div class="menu-toggle tooltip">
+							<div class="line"></div>
+							<div class="line"></div>
+							<span class="tooltiptext">Menu</span>
+						</div>
+					</div>
+					<div class="mobile-nav">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="noticias.html">Notícias</a></li>
+							<li><a href="objectivos.html">Objetivos</a></li>
+							<li><a href="comoajudar.html">Como ajudar</a></li>
+							<li><a href="sobrenos.html">Sobre nós</a></li>
+							<li><a href="sabermais.html">Saber mais</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+		<script>
+		let menu = document.querySelector('.mobile-two .menu-toggle')
+
+		menu.addEventListener('click', ()=>{
+			if (document.querySelector(".mobile-nav").style.display == "none" || document.querySelector(".mobile-nav").style.display == ""){
+
+				document.querySelector('.topnav').style.display = "none";
+				document.getElementById('logoSearch').style.display = "none";
+				document.getElementById('content').style.display = "none";
+				document.getElementById('footer').style.display = "none";
+				document.querySelector(".mobile-nav").style.display = "block";
+
+			} else {
+				document.getElementById('logoSearch').style.display = "block";
+				document.getElementById('content').style.display = "block";
+				document.getElementById('footer').style.display = "block";
+				document.querySelector(".mobile-nav").style.display = "none"
+				document.querySelector('.topnav').style.display = "inline-block";
+			}
+		})
+		</script>
+	<!---------------------------(Template)DO NOT EDIT ABOVE THIS LINE-------------------------------->
+
+	<!--------------------Guidelines for gender-inclusive language main content---------------------->
+	<main id="content" class="Multilanguage_page">
+
+			<h1>Guia para uma linguagem não sexista </h1>
+			    <div id="lista_language">
+					<h3>Formas de tratamento</h3>
+                 <p><strong><em>Ms. ou Mrs.?</em></strong><br> Na língua inglesa, normalmente usa-se a expressão "Ms." para se referir a mulheres solteira e "Mrs." para se referir a mulheres casadas. Porém, devemos ter cuidado na forma de tratamento preferida por cada indivíduo. No entanto, quando essa preferência não é conhecida, deve-se dar tratar por "Ms." ao invés de "Mrs.", uma vez que esta forma é mais inclusiva e pode se referir a qualquer mulher, independentemente do seu estado civil.
+					</p>
+					<h3> Evita expressões que reinforçam a esterótipos de género</h3>
+
+					<ul>
+						<li>Ela lança/corre/luta como uma rapariga.</li>
+						<li>De uma forma masculina.</li>
+						<li>Oh, isso é trabalho de mulher.</li>
+						<li>Homens simplesmente não conseguem entender.</li>
+					</ul>
+					<h3>Evite expressões que incluam preconceitos de género </h3>
+				</div>
+
+
+<button id="ptBtn">Português</button>
+<button id="enBtn">English</button>
+<button id="esBtn">Español</button>
+
+					<section class="portuguese">
+			<div lang="pt">
+				<table class="table_language_guia">
+					<tr>
+						<th>Menos inclusivo:</th>
+						<th>Mais inclusivo:</th>
+					</tr>
+					<tr>
+						<td>Convidados são cordialmente convidados para comparecer com as suas esposas.</td>
+						<td>Convidados são cordialmente convidados para comparecer com os/as seus/suas parceiros/as.</td>
+					</tr>
+					<tr>
+						<td>O pai está a fazer de "babysitter" das crianças.Fathers babysit their children.</td>
+						<td>O pai está a tomar conta das crinaças..</td>
+					</tr>
+					<tr>
+						<td>Feito pelo Homem.</td>
+						<td>Feito pela Humanidade/ pelas pessoas. </td>
+					</tr>
+				</table>
+			</div>
+		</section>
+
+		<section class="spanish">
+
+				<div lang="es">
+				<table class="table_language_guia">
+					<tr>
+						<th>Menos inclusivo:</th>
+						<th>Más inclusivo:</th>
+					</tr>
+					<tr>
+						<td>Lo invitamos a acudir con su esposa al acto.</td>
+						<td>Le invitamos a acudir con su pareja al acto</td>
+					</tr>
+					<tr>
+						<td>Los hombres ayudan/colaboran en la cas</td>
+						<td>Los hombres hacen tareas domésticas.</td>
+					</tr>
+					<tr>
+						<td>los docentes</td>
+						<td>el cuerpo docente</td>
+					</tr>
+					<tr>
+						<td>los trabajadores</td>
+						<td>el personal</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+
+
+		<section class="english">
+				<div lang="en">
+				<table class="table_language_guia">
+					<tr>
+						<th>Less inclusive:</th>
+						<th>More inclusive:</th>
+					</tr>
+					<tr>
+						<td>Fathers babysit their children.</td>
+						<td>Fathers care for their children.</td>
+					</tr>
+					<tr>
+						<td>“Mankind”</td>
+						<td>“Humankind”; “humanity”</td>
+					</tr>
+					<tr>
+						<td>“Man-made”</td>
+						<td>“Artificial”; “human-caused”</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+
+
+		<script>
+			let pt = document.getElementById('ptBtn')
+			let es = document.getElementById('esBtn')
+			let en = document.getElementById('enBtn')
+
+			pt.addEventListener('click', () => {
+				document.querySelector(".portuguese").style.display = "block"
+				document.querySelector(".spanish").style.display = "none"
+				document.querySelector(".english").style.display = "none"
+			})
+			es.addEventListener('click', () => {
+				document.querySelector(".portuguese").style.display = "none"
+				document.querySelector(".spanish").style.display = "block"
+				document.querySelector(".english").style.display = "none"
+			})
+			en.addEventListener('click', () => {
+				document.querySelector(".portuguese").style.display = "none"
+				document.querySelector(".spanish").style.display = "none"
+				document.querySelector(".english").style.display = "block"
+			})
+		</script>
+	</main>
+
+
+
+
+
+	<!---------------------------DO NOT EDIT BELOW THIS LINE-------------------------------->
+
+	<section id="footer">
+		<!----------------------------------FOOTER NAVS(Template)-------------------------------->
+		<nav class="footnav">
+			<div class="socialsite">
+				<a href="https://www.facebook.com/globalgoalsUN/" target="_blank"><img src="./icons/facebook-square-brands.svg" alt="" width="20"></a>
+				<a href="https://twitter.com/globalgoalsun" target="_blank"><img src="./icons/twitter-square-brands.svg" alt="" width="20"></a>
+				<a href="https://www.instagram.com/unitednations/" target="_blank"><img src="./icons/instagram-square-brands.svg" alt="" width="20"></a>
+			</div>
+			<div>
+				<h3>Subscreva a nossa newsletter</h3>
+				<form action="http://www3.ca.ua.pt/formlist.asp" method="post">
+					<div class="subscreva">
+						<div><label for="cname" class="subscreva1">Primeiro nome</label><br>
+							<input type="text" id="cname" name="cname">
+						</div>
+						<div><label for="email" class="subscreva1">E-mail</label><br>
+							<input name="email" type="email" id="email" value="">
+						</div>
+						<div><label for="pais" class="subscreva1">País</label><br>
+							<input type="text" id="pais" name="pais">
+						</div>
+					</div>
+					<br>
+					<input type="checkbox" name="Aceito" value="Aceito" id="Aceito">
+					<label for="Aceito" class="ACEITO"> Aceito a política de privacidade</label>
+					<br>
+					<button class="subescrevabutton">Subscreva</button>
+				</form>
+			</div>
+			<div id="footerEnd">
+				<section>
+					<h3>Junta-nos</h3>
+					<ul>
+						<li><a href="INSCREVA.html">Inscreva-se</a></li>
+						<li><a href="comoajudar.html">Contribua</a></li>
+					</ul>
+					<br>
+				</section>
+
+				<section>
+					<h3>Contacta-nos</h3>
+					<a href="mailto:LutaContraDesigualdade@portugal.pt" class="email">
+						 LutaContraDesigualdade@portugal.pt</a>
+					<p class="footp">Se tiver sugestões, não hesite em contactar-nos.</p>
+				</section>
+
+				<section id="footerRight">
+					<h3>Saber mais</h3>
+					<ul>
+						<li><a href="Livro_club.html">Clube de Leitura</a></li>
+						<li><a href="Aprende_diverte.html">Aprenda e Diverte-se</a></li>
+						<li><a href="language_curiosa.html">Linguagem não Sexista</a></li>
+					</ul>
+				</section>
+			</div>
+
+			<a onclick="topFunction()" id="btnTop" class="volta-topo">↑</a>
+		</nav>
+
+		<footer>© 2021 HTML+CSS Multimédia 2 DeCA. Projeto Final</footer>
+	</section>
+	<script>
+        /*Back to Top*/
+        //Get the button:
+        mybutton = document.getElementById("btnTop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
+</html>

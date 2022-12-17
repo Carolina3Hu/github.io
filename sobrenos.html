@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Homepage</title>
+</head>
+<body id="top">
+	<header>
+		<!----------------------company logo e pesquisa----------------------->
+		<div id="logoSearch" class="mobile-centrar">
+			<nav class="home_pesquisa">
+				<div class="tooltip">
+					<a href="index.html" ><img src="./materiais/LOGO.png" alt="" width="80" class="home"></a>
+					<!--Adicionar logo-->
+					<span class="tooltiptext">Início</span>
+				</div>
+				<!--SEARCH-->
+				<div class="search-container">
+					<form>
+						<input type="text" placeholder="Pesquisar..." name="Pesquisar">
+						<button class="search"><img src="./icons/search-solid.svg" alt="" width="15"></button><!--下载图片-->
+					</form>
+				</div>
+			</nav>
+		</div>
+
+			</header>
+
+
+		<!---------------------------Desktop menu-------------------------------->
+		<nav class="topnav">
+			<a href="index.html">Início</a>
+			<a href="noticias.html">Notícias</a>
+			<a href="objectivos.html">Objetivos</a>
+			<a href="comoajudar.html">Como ajudar</a>
+			<a href="sobrenos.html">Sobre nós</a>
+			<a href="sabermais.html">Saber mais</a>
+		</nav>
+		<!------------------------------Mobile Menu ------------------------------------->
+			<nav id="mobileMenu">
+				<div class="mobile mobile-two">
+					<div class="header">
+						<div class="menu-toggle tooltip">
+							<div class="line"></div>
+							<div class="line"></div>
+							<span class="tooltiptext">Menu</span>
+						</div>
+					</div>
+					<div class="mobile-nav">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="noticias.html">Notícias</a></li>
+							<li><a href="objectivos.html">Objetivos</a></li>
+							<li><a href="comoajudar.html">Como ajudar</a></li>
+							<li><a href="sobrenos.html">Sobre nós</a></li>
+							<li><a href="sabermais.html">Saber mais</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+		<script>
+		let menu = document.querySelector('.mobile-two .menu-toggle')
+
+		menu.addEventListener('click', ()=>{
+			if (document.querySelector(".mobile-nav").style.display == "none" || document.querySelector(".mobile-nav").style.display == ""){
+
+				document.querySelector('.topnav').style.display = "none";
+				document.getElementById('logoSearch').style.display = "none";
+				document.getElementById('contentSOBRENOS').style.display = "none";
+				document.getElementById('footer').style.display = "none";
+				document.querySelector(".mobile-nav").style.display = "block";
+
+			} else {
+				document.getElementById('logoSearch').style.display = "block";
+				document.getElementById('contentSOBRENOS').style.display = "block";
+				document.getElementById('footer').style.display = "block";
+				document.querySelector(".mobile-nav").style.display = "none"
+				document.querySelector('.topnav').style.display = "inline-block";
+			}
+		})
+		</script>
+<!---------------------------(Template)DO NOT EDIT ABOVE THIS LINE-------------------------------->
+<!--------------------sobre nos main content---------------------->
+<main id="contentSOBRENOS">
+<h1> Bem-vindo ao nosso site!</h1>
+<div class="grelha grelha_destaque">
+<h2>Descubra mais sobre nós </h2>
+<div class="ourpicture">
+	<div class="nomedoaluno">
+		<img src="Materiais/laura.jpg" alt="Laura" height="250" width="200">
+		<h3>Laura</h3>
+	</div>
+	<div class="nomedoaluno">
+		<img src="Materiais/Huifei.jpg" alt="Carolina" height="250" width="200">
+		<h3>Carolina Hu</h3>
+	</div>
+	<div class="nomedoaluno">
+		<img src="Materiais/AnaPinho2.JPG" alt="Ana Pinho" height="250" width="200">
+		<h3>Ana Pinho</h3>
+	</div>
+	<div class="nomedoaluno">
+		<img src="Materiais/sofia.jpg" alt="Sofia" height="250" width="200">
+		<h3>Sofia</h3>
+	</div>
+
+
+
+
+</div>
+<h2>Quem somos?</h2>
+<br>
+<div class="audio">
+<audio controls src="Materiais/audio.mp3">
+	Your browser does not support the audio tag.
+</audio>
+</div>
+<br>
+<p>Nós somos um grupo de 4 raparigas que se conheceu na universidade, e que ao longo de várias conversas se apercebeu de que havia muita informação sobre as desigualdades, mas que elas estavam muito dispersas pela internet e que passam muitas vezes despercebidas. Foi então aqui que decidimos criar o nosso site. Queríamos facilitar a procura de informações, concentrando-as num mesmo lugar. </p>
+<p>Queríamos igualmente criar um site seguro, no qual apareçam apenas informações verificadas e oficiais. Cada notícia e informação que pode ler no nosso site foi controlado por nós para que você não tenha de o fazer. Desejamos consciencializar a todas as pessoas que possam passar pelo nosso site, sobre as desigualdades de género e económicas, tanto a nível nacional como internacional. Procuramos também promover organizações, livros, sites, podcasts que ajudam na luta contra as desigualdades. </p>
+<p>Esperemos que passe um bom momento no nosso site e que encontre respostas às suas perguntas. Se tal não for o caso ou se achar que há aspetos do nosso site que podemos melhorar, não hesite em entrar em contacto connosco através do nosso e-mail ou do nosso número de telefone.</p>
+<p>Obrigado pela visita!</p>
+</div>
+<div class="grelha">
+<h2>Os nossos contactos</h2>
+<p><a href="mailto:LutaContraDesigualdade@portugal.pt" class="email" target="_blank"> LutaContraDesigualdade@portugal.pt</a></p>
+<p><a href="tel:965343158" class="tel" target="_blank" ><img src="./icons/phone-alt-solid.svg" width="20" alt="">  965343158</a></p>
+</div>
+<div class="grelha">
+<h2>Onde nós estamos? </h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.0222875679633!2d-8.65735998523013!3d40.62939045060333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23a2abf1a12a71%3A0x905d7abe0adaf770!2sComplexo%20Pedag%C3%B3gico%2C%20Cient%C3%ADfico%20e%20Tecnol%C3%B3gico!5e0!3m2!1spt-PT!2spt!4v1623607106808!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+</main>
+
+
+
+
+
+<!---------------------------DO NOT EDIT BELOW THIS LINE-------------------------------->
+
+<section id="footer">
+	<!----------------------------------FOOTER NAVS(Template)-------------------------------->
+	<nav class="footnav">
+		<div class="socialsite">
+			<a href="https://www.facebook.com/globalgoalsUN/" target="_blank"><img src="./icons/facebook-square-brands.svg" alt="" width="20"></a>
+			<a href="https://twitter.com/globalgoalsun" target="_blank"><img src="./icons/twitter-square-brands.svg" alt="" width="20"></a>
+			<a href="https://www.instagram.com/unitednations/" target="_blank"><img src="./icons/instagram-square-brands.svg" alt="" width="20"></a>
+		</div>
+		<div>
+			<h3>Subscreva a nossa newsletter</h3>
+			<form action="http://www3.ca.ua.pt/formlist.asp" method="post">
+				<div class="subscreva">
+					<div><label for="cname" class="subscreva1">Primeiro nome</label><br>
+						<input type="text" id="cname" name="cname">
+					</div>
+					<div><label for="email" class="subscreva1">E-mail</label><br>
+						<input name="email" type="email" id="email" value="">
+					</div>
+					<div><label for="pais" class="subscreva1">País</label><br>
+						<input type="text" id="pais" name="pais">
+					</div>
+				</div>
+				<br>
+				<input type="checkbox" name="Aceito" value="Aceito" id="Aceito">
+				<label for="Aceito" class="ACEITO"> Aceito a política de privacidade</label>
+				<br>
+				<button class="subescrevabutton">Subscreva</button>
+			</form>
+		</div>
+		<div id="footerEnd">
+			<section>
+				<h3>Junta-nos</h3>
+				<ul>
+					<li><a href="INSCREVA.html">Inscreva-se</a></li>
+					<li><a href="comoajudar.html">Contribua</a></li>
+				</ul>
+				<br>
+			</section>
+
+			<section>
+				<h3>Contacta-nos</h3>
+				<a href="mailto:LutaContraDesigualdade@portugal.pt" class="email">
+					 LutaContraDesigualdade@portugal.pt</a>
+				<p class="footp">Se tiver sugestões, não hesite em contactar-nos.</p>
+			</section>
+
+			<section id="footerRight">
+				<h3>Saber mais</h3>
+				<ul>
+					<li><a href="Livro_club.html">Clube de Leitura</a></li>
+					<li><a href="Aprende_diverte.html">Aprenda e Diverte-se</a></li>
+					<li><a href="language_curiosa.html">Linguagem não Sexista</a></li>
+				</ul>
+			</section>
+		</div>
+
+		<a onclick="topFunction()" id="btnTop" class="volta-topo">↑</a>
+	</nav>
+
+	<footer>© 2021 HTML+CSS Multimédia 2 DeCA. Projeto Final</footer>
+</section>
+<script>
+	/*Back to Top*/
+	//Get the button:
+	mybutton = document.getElementById("btnTop");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () { scrollFunction() };
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+</script>
+</body>
+</html>

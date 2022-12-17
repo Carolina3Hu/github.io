@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>noticia4</title>
+</head>
+<body id="top">
+
+	<header>
+		<!----------------------company logo e pesquisa----------------------->
+		<div id="logoSearch" class="mobile-centrar">
+			<nav class="home_pesquisa">
+				<div class="tooltip">
+					<a href="index.html" ><img src="./materiais/LOGO.png" alt="" width="80" class="home"></a>
+					<!--Adicionar logo-->
+					<span class="tooltiptext">Início</span>
+				</div>
+				<!--SEARCH-->
+				<div class="search-container">
+					<form>
+						<input type="text" placeholder="Pesquisar..." name="Pesquisar">
+						<button class="search"><img src="./icons/search-solid.svg" alt="" width="15"></button><!--下载图片-->
+					</form>
+				</div>
+			</nav>
+		</div>
+
+			</header>
+
+
+		<!---------------------------Desktop menu-------------------------------->
+		<nav class="topnav">
+			<a href="index.html">Início</a>
+			<a href="noticias.html">Notícias</a>
+			<a href="objectivos.html">Objetivos</a>
+			<a href="comoajudar.html">Como ajudar</a>
+			<a href="sobrenos.html">Sobre nós</a>
+			<a href="sabermais.html">Saber mais</a>
+		</nav>
+		<!------------------------------Mobile Menu ------------------------------------->
+			<nav id="mobileMenu">
+				<div class="mobile mobile-two">
+					<div class="header">
+						<div class="menu-toggle tooltip">
+							<div class="line"></div>
+							<div class="line"></div>
+							<span class="tooltiptext">Menu</span>
+						</div>
+					</div>
+					<div class="mobile-nav">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="noticias.html">Notícias</a></li>
+							<li><a href="objectivos.html">Objetivos</a></li>
+							<li><a href="comoajudar.html">Como ajudar</a></li>
+							<li><a href="sobrenos.html">Sobre nós</a></li>
+							<li><a href="sabermais.html">Saber mais</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+		<script>
+		let menu = document.querySelector('.mobile-two .menu-toggle')
+
+		menu.addEventListener('click', ()=>{
+			if (document.querySelector(".mobile-nav").style.display == "none" || document.querySelector(".mobile-nav").style.display == ""){
+
+				document.querySelector('.topnav').style.display = "none";
+				document.getElementById('logoSearch').style.display = "none";
+				document.getElementById('contentNOTICIA').style.display = "none";
+				document.getElementById('footer').style.display = "none";
+				document.querySelector(".mobile-nav").style.display = "block";
+
+			} else {
+				document.getElementById('logoSearch').style.display = "block";
+				document.getElementById('contentNOTICIA').style.display = "block";
+				document.getElementById('footer').style.display = "block";
+				document.querySelector(".mobile-nav").style.display = "none"
+				document.querySelector('.topnav').style.display = "inline-block";
+			}
+		})
+		</script>
+<!---------------------------(Template)DO NOT EDIT ABOVE THIS LINE-------------------------------->
+<!--------------------Obejectivos main content---------------------->
+<main id="contentNOTICIA">
+
+  <h1>  Reduzir a desigualdade para gerar oportunidades</h1>
+	<img  class="imgsenhora" src="Materiais/Senhora1.jpg" alt="Senhora" height="312" width="570">
+<p class="direitosautor">  (foto: Jeffrey Arguedas-EFE-Newscom)</P>
+  <br>
+  <p><b>  Kristalina Georgieva<br>
+    7 de janeiro de 2020</b></p>
+
+  <p>  Nos últimos dez anos, a desigualdade transformou-se em um dos desafios mais complexos e desconcertantes da economia mundial.</p>
+
+    <p>Desigualdade de oportunidades . Desigualdade entre gerações . Desigualdade entre mulheres e homens. E, é claro, desigualdade de renda e de riqueza . Todas essas facetas da desigualdade estão presentes em nossas sociedades e, infelizmente, estão aumentando em muitos países.</p>
+
+  <p>  A boa notícia é que dispomos dos meios para enfrentar esses problemas, desde que tenhamos a vontade de fazê-lo. A implementação de reformas é um processo politicamente difícil, mas os ganhos em termos de crescimento e produtividade valem o esforço.</p>
+<br>
+    <h2>Políticas de combate à desigualdade</h2>
+
+  <p>  Combater a desigualdade exige uma abordagem nova. Primeiro, é preciso repensar as políticas fiscais e a tributação progressiva .</p>
+
+  <p>  A tributação progressiva é um componente essencial de uma política fiscal eficaz. Nossos estudos mostram que é possível elevar as alíquotas tributárias marginais no topo da distribuição de renda sem sacrificar o crescimento econômico.</p>
+
+  <p>  O uso de ferramentas digitais na cobrança de impostos também pode ser um dos elementos de uma estratégia global para reforçar a receita interna. Reduzir a corrupção pode tanto melhorar a arrecadação como aumentar a confiança no governo. E, mais importante, tais estratégias podem gerar os recursos necessários para investir na ampliação das oportunidades para as pessoas e comunidades que estão ficando para trás.</p>
+
+    <p>A adoção de uma perspectiva de gênero na preparação do orçamento, conhecida como gender budgeting , é outra ferramenta fiscal valiosa na luta para reduzir a desigualdade. Embora muitos países reconheçam a necessidade de igualdade de gênero e empoderamento das mulheres, os governos poderiam usar essa ferramenta para estruturar os gastos e a tributação de modo a dar novo ímpeto à igualdade de gênero, ampliando a participação das mulheres na força de trabalho e, dessa forma, impulsionando o crescimento e a estabilidade.</p>
+
+  <p>  Segundo, as políticas de gastos sociais são cada vez mais importantes para combater a desigualdade. Quando bem aplicadas, conseguem cumprir um papel fundamental na mitigação da desigualdade de renda e de seus efeitos nocivos sobre a igualdade de oportunidades e a coesão social.</p>
+
+  <p>  A educação, por exemplo, prepara os jovens para se tornarem adultos produtivos que contribuirão para a sociedade. A saúde salva vidas e também pode melhorar a qualidade de vida. Os programas de previdência social ajudam a preservar a dignidade dos idosos.</p>
+
+  <p>  A capacidade de aumentar os gastos sociais também é essencial para cumprir os Objetivos de Desenvolvimento Sustentável (ODS). Um novo estudo do FMI mostra que a elevação necessária varia bastante entre os países.</p>
+
+  <p>  Por exemplo: em áreas básicas como saúde, educação e infraestrutura prioritária, estimamos que as economias de mercados emergentes teriam que elevar os gastos a cada ano até chegar a cerca de 4 pontos percentuais do PIB em 2030, enquanto a média dos países em desenvolvimento de baixa renda teria de despender o equivalente a 15 pontos percentuais do PIB.</p>
+
+    <p>Terceiro, reformar a estrutura da economia poderia apoiar os esforços para combater a desigualdade ao reduzir os custos do ajuste, minimizar as disparidades regionais e preparar os trabalhadores para ocupar um número crescente de empregos verdes.</p>
+
+  <p>  Políticas ativas para o mercado de trabalho – como a assistência na procura de emprego, os programas de capacitação e, em alguns casos, o salário-desemprego – podem melhorar a qualificação dos trabalhadores e encurtar os períodos de desocupação.</p>
+
+  <p>  Facilitar a mobilidade dos trabalhadores entre empresas, setores e regiões minimiza os custos de ajuste e promove uma recolocação rápida. Políticas de habitação, crédito e infraestrutura podem ser úteis nesses sentido.</p>
+
+  <p>  Políticas e investimentos direcionados a determinadas áreas geográficas podem complementar as transferências sociais já existentes.</p>
+
+  <img src="Materiais/Desigualdade.jpg" alt="Imagem sobre desigualdade" height="400" width="500">
+<p class="direitosautor"><a href="https://dialogosdosul.operamundi.uol.com.br/economia/67033/relatorio-revela-que-pobreza-extrema-e-fortuna-dos-bilionarios-dispararam-com-pandemia" > dialogosdosul</a>
+</p>
+
+	  <h2>Como o FMI apoia os países na redução da desigualdade</h2>
+
+  <p>  Ao longo da última década, o combate à desigualdade passou a figurar como um dos elementos do trabalho do FMI nas áreas de supervisão, concessão de crédito, estudos e desenvolvimento de capacidades, uma tendência que será mantida na próxima década.</p>
+
+    <p>Uma pedra angular de nossa abordagem às questões de inclusão econômica é nossa estratégia para os gastos sociais .</p>
+
+    <p>Nosso envolvimento com os países parte da premissa de que os gastos sociais precisam ser adequados, mas também eficientes e financiados de forma sustentável. Não são apenas critérios. São princípios que norteiam nossa assessoria em políticas.</p>
+
+    <p>Por exemplo, se os gastos sociais forem insuficientes para alcançar os ODS ou para proteger uma parcela significativa das famílias pobres e vulneráveis, então é preciso aumentá-los.</p>
+
+  <p>  De maneira análoga, com a evolução demográfica, as questões de sustentabilidade fiscal passarão para o primeiro plano da discussão sobre gastos sociais, abarcando os gastos com saúde e previdência.</p>
+
+  <p>  O mais importante é que mitigar os efeitos adversos do ajuste sobre os pobres e vulneráveis passou a ser, e continuará sendo, um objetivo fundamental.</p>
+<br>
+  <h2>  A implementação na prática</h2>
+
+  <p>  Exemplos recentes de nosso envolvimento com os países na área de gastos sociais oferecem lições valiosas:</P>
+
+  <p>  Durante a implementação do programa apoiado pelo FMI, o Egito mais do que dobrou a cobertura das transferências de renda, beneficiando 2,3 milhões de famílias.</p>
+
+  <p>  Em Gana, ajudamos a criar espaço no orçamento para um aumento dos gastos com o ensino público — para que o país possa alcançar seu objetivo de universalização do ensino médio.</p>
+
+    <p>Assessoramos o Japão na formulação de opções para uma reforma da previdência, uma medida indispensável diante do envelhecimento da sua população.</p>
+
+    <p>Sabemos perfeitamente que mais um relatório bonito na estante não beneficia ninguém. Por isso, estamos empenhados em garantir que nossa estratégia para os gastos sociais esteja plenamente integrada a todas as nossas atividades, para que possamos adaptar melhor nossa assessoria às preferências e circunstâncias específicas de cada país.</p>
+<br>
+  <h2>Colaboração com os parceiros</h2>
+
+  <p>  Seja no combate à desigualdade, seja na assessoria sobre os gastos sociais, estamos conscientes de que não conseguiremos fazer tudo sozinhos.</p>
+
+<p>    Vislumbramos uma parceria entre organismos internacionais, acadêmicos, autoridades nacionais, sociedade civil e setor privado, trabalhando juntos para melhorar as políticas de gastos sociais e lançar as bases para o cumprimento dos ODS.</p>
+
+  <p>  Por exemplo, reuni-me recentemente com os ministros do Trabalho do G-7, cuja ampla experiência em questões sociais e laborais pode enriquecer nossa assessoria em políticas. E nós do FMI podemos ajudar a destacar essas questões no contexto mais amplo do diálogo de política econômica sobre estabilidade e crescimento.</p>
+
+  <p>  Além disso, organismos internacionais como o Banco Mundial e a Organização Internacional do Trabalho têm um conhecimento inestimável em matéria de gastos sociais.</p>
+
+  <p>  E a sociedade civil, o meio acadêmico, os centros de estudo e os sindicatos também oferecem perspectivas únicas, que enriquecem nossas opiniões, ajudam-nos a resistir ao pensamento de grupo e permitem-nos apreciar melhor aspectos nacionais específicos.</p>
+
+  <p>  Naturalmente, em se tratando de gastos sociais, não existe uma solução que se aplique a todos os casos. Os países têm preferências distintas, enfrentam desafios variados e aspiram a coisas diferentes. Contudo, se trabalharmos juntos, é mais provável que façamos as perguntas certas e, assim, encontremos as respostas certas.</p>
+
+<p class="direitosautor">Notícia retirada de:<a href="https://www.imf.org/pt/News/Articles/2020/01/07/blog-reduce-inequality-to-create-opportunity" target="_blank"> Kristalina Georgieva</a></p>
+</main>
+
+
+
+
+
+
+<!---------------------------DO NOT EDIT BELOW THIS LINE-------------------------------->
+
+<section id="footer">
+  <!----------------------------------FOOTER NAVS(Template)-------------------------------->
+  <nav class="footnav">
+		<div class="socialsite">
+			<a href="https://www.facebook.com/globalgoalsUN/" target="_blank"><img src="./icons/facebook-square-brands.svg" alt="" width="20"></a>
+			<a href="https://twitter.com/globalgoalsun" target="_blank"><img src="./icons/twitter-square-brands.svg" alt="" width="20"></a>
+			<a href="https://www.instagram.com/unitednations/" target="_blank"><img src="./icons/instagram-square-brands.svg" alt="" width="20"></a>
+		</div>
+    <div>
+      <h3>Subscreva a nossa newsletter</h3>
+      <form action="http://www3.ca.ua.pt/formlist.asp" method="post">
+        <div class="subscreva">
+          <div><label for="cname" class="subscreva1">Primeiro nome</label><br>
+            <input type="text" id="cname" name="cname">
+          </div>
+          <div><label for="email" class="subscreva1">E-mail</label><br>
+            <input name="email" type="email" id="email" value="">
+          </div>
+          <div><label for="pais" class="subscreva1">País</label><br>
+            <input type="text" id="pais" name="pais">
+          </div>
+        </div>
+        <br>
+        <input type="checkbox" name="Aceito" value="Aceito" id="Aceito">
+        <label for="Aceito" class="ACEITO"> Aceito a política de privacidade</label>
+        <br>
+        <button class="subescrevabutton">Subscreva</button>
+      </form>
+    </div>
+    <div id="footerEnd">
+      <section>
+        <h3>Junta-nos</h3>
+        <ul>
+          <li><a href="INSCREVA.html">Inscreva-se</a></li>
+          <li><a href="comoajudar.html">Contribua</a></li>
+        </ul>
+        <br>
+      </section>
+
+      <section>
+        <h3>Contacta-nos</h3>
+        <a href="mailto:LutaContraDesigualdade@portugal.pt" class="email">
+           LutaContraDesigualdade@portugal.pt</a>
+        <p class="footp">Se tiver sugestões, não hesite em contactar-nos.</p>
+      </section>
+
+      <section id="footerRight">
+        <h3>Saber mais</h3>
+        <ul>
+          <li><a href="Livro_club.html">Clube de Leitura</a></li>
+          <li><a href="Aprende_diverte.html">Aprenda e Diverte-se</a></li>
+          <li><a href="language_curiosa.html">Linguagem não Sexista</a></li>
+        </ul>
+      </section>
+    </div>
+
+        <a onclick="topFunction()" id="btnTop" class="volta-topo">↑</a>
+      </nav>
+
+      <footer>© 2021 HTML+CSS Multimédia 2 DeCA. Projeto Final</footer>
+    </section>
+    <script>
+          /*Back to Top*/
+          //Get the button:
+          mybutton = document.getElementById("btnTop");
+
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () { scrollFunction() };
+
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  mybutton.style.display = "block";
+              } else {
+                  mybutton.style.display = "none";
+              }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+              document.body.scrollTop = 0; // For Safari
+              document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+          }
+      </script>
+</body>
+</html>

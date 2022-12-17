@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Homepage</title>
+</head>
+<body id="top">
+	<header>
+		<!----------------------company logo e pesquisa----------------------->
+		<div id="logoSearch" class="mobile-centrar">
+			<nav class="home_pesquisa">
+				<div class="tooltip">
+					<a href="index.html" ><img src="./materiais/LOGO.png" alt="" width="80" class="home"></a>
+					<!--Adicionar logo-->
+					<span class="tooltiptext">Início</span>
+				</div>
+				<!--SEARCH-->
+				<div class="search-container">
+					<form>
+						<input type="text" placeholder="Pesquisar..." name="Pesquisar">
+						<button class="search"><img src="./icons/search-solid.svg" alt="" width="15"></button><!--下载图片-->
+					</form>
+				</div>
+			</nav>
+		</div>
+
+			</header>
+
+
+		<!---------------------------Desktop menu-------------------------------->
+		<nav class="topnav">
+			<a href="index.html">Início</a>
+			<a href="noticias.html">Notícias</a>
+			<a href="objectivos.html">Objetivos</a>
+			<a href="comoajudar.html">Como ajudar</a>
+			<a href="sobrenos.html">Sobre nós</a>
+			<a href="sabermais.html">Saber mais</a>
+		</nav>
+		<!------------------------------Mobile Menu ------------------------------------->
+			<nav id="mobileMenu">
+				<div class="mobile mobile-two">
+					<div class="header">
+						<div class="menu-toggle tooltip">
+							<div class="line"></div>
+							<div class="line"></div>
+							<span class="tooltiptext">Menu</span>
+						</div>
+					</div>
+					<div class="mobile-nav">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="noticias.html">Notícias</a></li>
+							<li><a href="objectivos.html">Objetivos</a></li>
+							<li><a href="comoajudar.html">Como ajudar</a></li>
+							<li><a href="sobrenos.html">Sobre nós</a></li>
+							<li><a href="sabermais.html">Saber mais</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+		<script>
+		let menu = document.querySelector('.mobile-two .menu-toggle')
+
+		menu.addEventListener('click', ()=>{
+			if (document.querySelector(".mobile-nav").style.display == "none" || document.querySelector(".mobile-nav").style.display == ""){
+
+				document.querySelector('.topnav').style.display = "none";
+				document.getElementById('logoSearch').style.display = "none";
+				document.getElementById('contentAJUDA').style.display = "none";
+				document.getElementById('footer').style.display = "none";
+				document.querySelector(".mobile-nav").style.display = "block";
+
+			} else {
+				document.getElementById('logoSearch').style.display = "block";
+				document.getElementById('contentAJUDA').style.display = "block";
+				document.getElementById('footer').style.display = "block";
+				document.querySelector(".mobile-nav").style.display = "none"
+				document.querySelector('.topnav').style.display = "inline-block";
+			}
+		})
+		</script>
+<!---------------------------(Template)DO NOT EDIT ABOVE THIS LINE-------------------------------->
+
+<!--------------------como ajudar main content---------------------->
+<main id="contentAJUDA">
+	<h1> Como ajudar? </h1>
+	<h2 >
+	  <a href="#doar">Quais as organizações para as quais posso contribuir?</a>
+</h2>
+
+	<section class="AJUDA">
+
+	  <article class="AJUDA1">
+	<h2> Agradecemos desde já o seu contributo, a sua ajuda é fundamental. Obrigado!</h2>
+	<p> Imagem retirada de: <a href="https://institutoreacao.org.br/entenda-como-a-pratica-de-acoes-para-ajudar-o-proximo-podem-fazer-uma-pessoa-ser-mais-feliz" target="_blank"> INSTITUTO REAÇÃO</a></p>
+    </article>
+
+<article class="AJUDA2">
+	<h3>Agora já podes fazer parte da nossa luta contra a desigualdade no mundo!<br> Individualmente ou em grupo, qualquer um pode apoiar a a continuação da nossa missão!<br>
+	 Um pequeno contributo pode ter um grande impacto na nossa luta!</h3>
+	 <p>Imagem retirada de:<a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D3921835821161385&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Fequalrightstrust%2Fposts&tbnid=HxVR2OqAu0UeCM&vet=10CAcQxiAoCWoXChMIiJnc9tHz8AIVAAAAAB0AAAAAEAI..i&docid=HcIb5eg_eK2XtM&w=1920&h=1080&itg=1&q=equality%20rights&safe=active&ved=0CAcQxiAoCWoXChMIiJnc9tHz8AIVAAAAAB0AAAAAEAI" target="_blank"> Equal Rights Trust</a></p>
+</article>
+</section>
+
+<section class="AJUDA3">
+
+	  <h2>Existem várias formas que nos permitem ajudar. <br>Algumas dessas são apresentadas a seguir.</h2>
+<div class="grelha_container" id="ajuda3table">
+	<article class="grelha-art" id="ajuda3n1">
+	<div>
+	  <h3>Donativos Financeiros</h3>
+	  <p>Todos os donativos financeiros  que recebemos são, posteriormente, utilizados para a realização das atividadades que vamos desenvolvendo.
+	  </p>
+	</div>
+	<div class="ajuda3donate">
+	<h3>Donativos Bancários</h3>
+	<p>Nº CONTA: 0010 0000 85534980032 94<br>
+	    IBAN: PT50 0010 0000 8553 4980 0329 4<br>
+
+	  ENTIDADE: Luta contra a Desigualdade Portugal – Serviço de apoio à igualdade – Assistência Humanitária
+	</p>
+	</div>
+</article>
+
+	<article class="grelha-art" id="ajuda3n2">
+	<h3>  Donativos em Bens e/ou Géneros</h3>
+	<p>Para donativos em bens e/ou géneros pedimos que nos envie um e-mail para LutaContraDesigualdade@portugal.pt. No seu e-mail indique a sua área de residência e diga, o mais específico possível, o tipo de bens que deseja doar, assim como outras informações que ache importantes para a concretização da doação.</p>
+</article>
+</div>
+
+</section>
+
+	<section id="doar">
+	 <h3>Deixamos aqui alguns links para que possa escolher a organização com a qual mais se identifique: </h3>
+
+	  <p>Comissão para a cidadania e igualdade de género:<a class="links" href="https://www.cig.gov.pt/" target="_blank"> https://www.cig.gov.pt/ </a><br>
+	 Feministas em Movimento:<a class="links" href="https://fem.org.pt/" target="_blank"> https://fem.org.pt/ </a><br>
+	 Plataforma Portuguesa para os Direitos das Mulheres:<a class="links"  href="https://plataformamulheres.org.pt/" target="_blank"> https://plataformamulheres.org.pt</a><br>
+	 Observatório das Desigualdades:<a class="links" href="https://www.observatorio-das-desigualdades.com/" target="_blank"> https://www.observatorio-das-desigualdades.com/ </a><br>
+	 APMJ pelos direitos das mulheres:<a class="links" href="https://apmj.pt/" target="_blank"> https://apmj.pt/</a><br>
+	Ativismo em Foco:<a class="links" href="https://www.facebook.com/ativismoemfoco/" target="_blank"> https://www.facebook.com/ativismoemfoco/</a><br>
+    EIR - Emancipação, Igualdade e Recuperação - UMAR:<a class="links" href="https://www.facebook.com/centroeir/" target="_blank"> https://www.facebook.com/centroeir/</a></p>
+
+
+	  <img class="doarImg" src="Materiais/Portugal_Igual.png" alt="Imagem Portugal Mais Igual" height="84" width="520">
+	  <p class="doarImgp">Imagem retirada de:<a href="https://www.cig.gov.pt/" target="_blank"> CIG</a></p>
+	  </section>
+
+</main>
+
+
+
+
+
+<!---------------------------DO NOT EDIT BELOW THIS LINE-------------------------------->
+
+<section id="footer">
+	<!----------------------------------FOOTER NAVS(Template)-------------------------------->
+	<nav class="footnav">
+		<div class="socialsite">
+			<a href="https://www.facebook.com/globalgoalsUN/" target="_blank"><img src="./icons/facebook-square-brands.svg" alt="" width="20"></a>
+			<a href="https://twitter.com/globalgoalsun" target="_blank"><img src="./icons/twitter-square-brands.svg" alt="" width="20"></a>
+			<a href="https://www.instagram.com/unitednations/" target="_blank"><img src="./icons/instagram-square-brands.svg" alt="" width="20"></a>
+		</div>
+		<div>
+			<h3>Subscreva a nossa newsletter</h3>
+			<form action="http://www3.ca.ua.pt/formlist.asp" method="post">
+				<div class="subscreva">
+					<div><label for="cname" class="subscreva1">Primeiro nome</label><br>
+						<input type="text" id="cname" name="cname">
+					</div>
+					<div><label for="email" class="subscreva1">E-mail</label><br>
+						<input name="email" type="email" id="email" value="">
+					</div>
+					<div><label for="pais" class="subscreva1">País</label><br>
+						<input type="text" id="pais" name="pais">
+					</div>
+				</div>
+				<br>
+				<input type="checkbox" name="Aceito" value="Aceito" id="Aceito">
+				<label for="Aceito" class="ACEITO"> Aceito a política de privacidade</label>
+				<br>
+				<button class="subescrevabutton">Subscreva</button>
+			</form>
+		</div>
+		<div id="footerEnd">
+			<section>
+				<h3>Junta-nos</h3>
+				<ul>
+					<li><a href="INSCREVA.html">Inscreva-se</a></li>
+					<li><a href="comoajudar.html">Contribua</a></li>
+				</ul>
+				<br>
+			</section>
+
+			<section>
+				<h3>Contacta-nos</h3>
+				<a href="mailto:LutaContraDesigualdade@portugal.pt" class="email">
+					 LutaContraDesigualdade@portugal.pt</a>
+				<p class="footp">Se tiver sugestões, não hesite em contactar-nos.</p>
+			</section>
+
+			<section id="footerRight">
+				<h3>Saber mais</h3>
+				<ul>
+					<li><a href="Livro_club.html">Clube de Leitura</a></li>
+					<li><a href="Aprende_diverte.html">Aprenda e Diverte-se</a></li>
+					<li><a href="language_curiosa.html">Linguagem não Sexista</a></li>
+				</ul>
+			</section>
+		</div>
+		<a onclick="topFunction()" id="btnTop" class="volta-topo">↑</a>
+	</nav>
+
+	<footer>© 2021 HTML+CSS Multimédia 2 DeCA. Projeto Final</footer>
+</section>
+<script>
+	/*Back to Top*/
+	//Get the button:
+	mybutton = document.getElementById("btnTop");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () { scrollFunction() };
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+</script>
+</body>
+</html>

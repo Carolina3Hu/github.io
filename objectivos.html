@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Homepage</title>
+</head>
+<body id="top">
+	<header>
+		<!----------------------company logo e pesquisa----------------------->
+		<div id="logoSearch" class="mobile-centrar">
+			<nav class="home_pesquisa">
+				<div class="tooltip">
+					<a href="index.html" ><img src="./materiais/LOGO.png" alt="" width="80" class="home"></a>
+					<!--Adicionar logo-->
+					<span class="tooltiptext">Início</span>
+				</div>
+				<!--SEARCH-->
+				<div class="search-container">
+					<form>
+						<input type="text" placeholder="Pesquisar..." name="Pesquisar">
+						<button class="search"><img src="./icons/search-solid.svg" alt="" width="15"></button><!--下载图片-->
+					</form>
+				</div>
+			</nav>
+		</div>
+
+			</header>
+
+
+		<!---------------------------Desktop menu-------------------------------->
+		<nav class="topnav">
+			<a href="index.html">Início</a>
+			<a href="noticias.html">Notícias</a>
+			<a href="objectivos.html">Objetivos</a>
+			<a href="comoajudar.html">Como ajudar</a>
+			<a href="sobrenos.html">Sobre nós</a>
+			<a href="sabermais.html">Saber mais</a>
+		</nav>
+		<!------------------------------Mobile Menu ------------------------------------->
+			<nav id="mobileMenu">
+				<div class="mobile mobile-two">
+					<div class="header">
+						<div class="menu-toggle tooltip">
+							<div class="line"></div>
+							<div class="line"></div>
+							<span class="tooltiptext">Menu</span>
+						</div>
+					</div>
+					<div class="mobile-nav">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="noticias.html">Notícias</a></li>
+							<li><a href="objectivos.html">Objetivos</a></li>
+							<li><a href="comoajudar.html">Como ajudar</a></li>
+							<li><a href="sobrenos.html">Sobre nós</a></li>
+							<li><a href="sabermais.html">Saber mais</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+		<script>
+		let menu = document.querySelector('.mobile-two .menu-toggle')
+
+		menu.addEventListener('click', ()=>{
+			if (document.querySelector(".mobile-nav").style.display == "none" || document.querySelector(".mobile-nav").style.display == ""){
+
+				document.querySelector('.topnav').style.display = "none";
+				document.getElementById('logoSearch').style.display = "none";
+				document.getElementById('contentOBJETIVOS').style.display = "none";
+				document.getElementById('footer').style.display = "none";
+				document.querySelector(".mobile-nav").style.display = "block";
+
+			} else {
+				document.getElementById('logoSearch').style.display = "block";
+				document.getElementById('contentOBJETIVOS').style.display = "block";
+				document.getElementById('footer').style.display = "block";
+				document.querySelector(".mobile-nav").style.display = "none"
+				document.querySelector('.topnav').style.display = "inline-block";
+			}
+		})
+		</script>
+<!---------------------------(Template)DO NOT EDIT ABOVE THIS LINE-------------------------------->
+<!--------------------Obejectivos main content---------------------->
+<main id="contentOBJETIVOS">
+	<div>
+		<h1>Objetivos de desenvolvimento sustentável</h1>
+			<section class="sectionOB">
+				<h2> Alcançar a igualdade de género e empoderar todas as mulheres e meninas</h2>
+				<img  src="Materiais/obj_5.png" alt="Imagem sobre doar" height="300" width="600">
+				<p class="direitosautor"> Imagem retirada de: <a href=" https://www.pnl2027.gov.pt/np4/file/2330/obj_5.png" target="_blank" >gov.pt</a> </p><br>
+				<p class="pclasse">A igualdade de género não é apenas um direito humano fundamental, mas uma base necessária para um mundo pacífico, próspero e sustentável.</p>
+				<p>Houve progresso nas últimas décadas: mais meninas vão à escola, menos meninas são forçadas ao casamento precoce, mais mulheres ocupam cargos liderança e as leis são reformadas para promover a igualdade de género.</p>
+				<p>Apesar desses ganhos, muitos desafios permanecem: as leis discriminatórias e as normas sociais permanecem difundidas, as mulheres continuam a ser sub-representadas em todos os níveis de liderança política e 1 em cada 5 mulheres e meninas com idades entre 15 e 49 anos relatam ter sofrido violência física ou sexual por parte de um parceiro íntimo dentro de um período de 12 meses.</p>
+				<p>Aqui seguem os objetivos para reduzir estas desigualdades</p>
+				<p class="objetivo5">Objetivos</p>
+				<ul>
+					<li>Acabar com todas as formas de discriminação contra todas as mulheres e meninas em todos os lugares.</li>
+					<li>Eliminar todas as formas de violência contra todas as mulheres e meninas nas esferas pública e privada, incluindo tráfico e exploração sexual e outros tipos de exploração.</li>
+					<li>Eliminar todas as práticas prejudiciais, como casamento infantil, precoce e forçado e mutilação genital feminina.</li>
+					<li>Reconhecer e valorizar os cuidados não remunerados e o trabalho doméstico por meio da prestação de serviços públicos, infraestrutura e políticas de proteção social e a promoção da responsabilidade compartilhada dentro da casa e da família conforme ao que é nacionalmente apropriado.</li>
+					<li>Garantir a participação plena e efetiva das mulheres e oportunidades iguais de liderança em todos os níveis de tomada de decisão na vida política, económica e pública.</li>
+					<li>Garantir o acesso universal à saúde sexual e reprodutiva e aos direitos reprodutivos, conforme ao acordo entre o Programa de Ação da Conferência Internacional sobre População e Desenvolvimento e a Plataforma de Ação de Pequim e os documentos resultantes das suas conferências de revisão.</li>
+					<li>Realizar reformas para dar às mulheres direitos iguais aos recursos económicos, bem como acesso à propriedade e controle sobre a terra e outras formas de propriedade, serviços financeiros, heranças e recursos naturais, de acordo com as leis nacionais.</li>
+					<li>Melhorar o uso de tecnologia capacitadora, em particular tecnologia de informação e comunicação, para promover o empoderamento das mulheres.</li>
+					<li>Adotar e fortalecer políticas sólidas e dispositivos legislativos aplicáveis para a promoção da igualdade de género e o empoderamento de todas as mulheres e meninas em todos os níveis.</li>
+			</ul>
+		</section>
+
+			<section class="sectionOB">
+				<h2> Reduzir a desigualdade dentro e entre os países</h2>
+				<img src="Materiais/obj_10.png" alt="Imagem sobre doar" height="300" width="600">
+				<p class="direitosautor"> Imagem retirada de:<a href=" https://www.cascais.pt/sites/default/files/styles/galeria-new/public/imagens/areas/new/obj_10_2aversao.png?itok=p_29WUye" target="_blank">cascais.pt</a></p><br>
+				<p class="pclasse">Reduzir as desigualdades e garantir que ninguém seja deixado para trás são essenciais para alcançar os Objetivos de Desenvolvimento Sustentável.</p>
+				<p>A desigualdade dentro e entre os países é um motivo persistente de preocupação. Apesar de alguns sinais positivos em direção à redução da desigualdade em algumas dimensões, como a redução da desigualdade de renda relativa em alguns países e a situação comercial preferencial que beneficia os países de baixa renda, a desigualdade ainda persiste.</p>
+				<p>Aqui seguem os objetivos para reduzir estas desigualdades</p>
+				<p class="objetivo10">Objetivos</p>
+				<ul>
+					<li>Até 2030, alcançar e sustentar progressivamente o crescimento da renda dos 40 por cento mais pobres da população a uma taxa superior à média nacional.</li>
+					<li>Até 2030, capacitar e promover a inclusão social, económica e política de todos, independentemente de idade, sexo, deficiência, raça, etnia, origem, religião ou condição econômica ou outra.</li>
+					<li>Garantir as mesmas oportunidades para todos e reduzir as desigualdades, incluindo a eliminação de leis, políticas e práticas discriminatórias e a promoção de legislação, políticas e ações adequadas a esse respeito.</li>
+					<li>Adotar políticas, especialmente fiscais, salariais e de proteção social, e alcançar progressivamente uma maior igualdade.</li>
+					<li>Melhorar a regulamentação e o monitoramento dos mercados e instituições financeiras globais e fortalecer a implementação de tais regulamentos.</li>
+					<li>Garantir maior representação e voz para os países em desenvolvimento na tomada de decisões em instituições econômicas e financeiras internacionais globais, a fim de fornecer instituições mais eficazes, confiáveis, responsáveis e legítimas.</li>
+					<li>Facilitar a migração ordenada, segura, regular e responsável e a mobilidade de pessoas, inclusive por meio da implementação de políticas de migração planejadas e bem gerenciadas.</li>
+					<li>Implementar o princípio de tratamento especial e diferenciado para os países em desenvolvimento, em particular os países menos desenvolvidos, de acordo com os acordos da Organização Mundial do Comércio.</li>
+					<li>Incentivar a ajuda oficial ao desenvolvimento e os fluxos financeiros, incluindo o investimento estrangeiro direto, para os Estados onde a necessidade é maior, em particular os países menos desenvolvidos, os países africanos, os pequenos Estados insulares em desenvolvimento e os países em desenvolvimento sem litoral, de acordo com seus planos e programas nacionais.</li>
+					<li>Até 2030, reduzir para menos de 3 por cento os custos de transação das remessas de migrantes e eliminar corredores de remessas com custos superiores a 5 por cento.</li>
+				</ul>
+		    </section>
+	</div>
+
+</main>
+
+<!---------------------------DO NOT EDIT BELOW THIS LINE-------------------------------->
+
+<section id="footer">
+	<!----------------------------------FOOTER NAVS(Template)-------------------------------->
+	<nav class="footnav">
+		<div class="socialsite">
+			<a href="https://www.facebook.com/globalgoalsUN/" target="_blank"><img src="./icons/facebook-square-brands.svg" alt="" width="20"></a>
+			<a href="https://twitter.com/globalgoalsun" target="_blank"><img src="./icons/twitter-square-brands.svg" alt="" width="20"></a>
+			<a href="https://www.instagram.com/unitednations/" target="_blank"><img src="./icons/instagram-square-brands.svg" alt="" width="20"></a>
+		</div>
+		<div>
+			<h3>Subscreva a nossa newsletter</h3>
+			<form action="http://www3.ca.ua.pt/formlist.asp" method="post">
+				<div class="subscreva">
+					<div><label for="cname" class="subscreva1">Primeiro nome</label><br>
+						<input type="text" id="cname" name="cname">
+					</div>
+					<div><label for="email" class="subscreva1">E-mail</label><br>
+						<input name="email" type="email" id="email" value="">
+					</div>
+					<div><label for="pais" class="subscreva1">País</label><br>
+						<input type="text" id="pais" name="pais">
+					</div>
+				</div>
+				<br>
+				<input type="checkbox" name="Aceito" value="Aceito" id="Aceito">
+				<label for="Aceito" class="ACEITO"> Aceito a política de privacidade</label>
+				<br>
+				<button class="subescrevabutton">Subscreva</button>
+			</form>
+		</div>
+		<div id="footerEnd">
+			<section>
+				<h3>Junta-nos</h3>
+				<ul>
+					<li><a href="INSCREVA.html">Inscreva-se</a></li>
+					<li><a href="comoajudar.html">Contribua</a></li>
+				</ul>
+				<br>
+			</section>
+
+			<section>
+				<h3>Contacta-nos</h3>
+				<a href="mailto:LutaContraDesigualdade@portugal.pt" class="email">
+					 LutaContraDesigualdade@portugal.pt</a>
+				<p class="footp">Se tiver sugestões, não hesite em contactar-nos.</p>
+			</section>
+
+			<section id="footerRight">
+				<h3>Saber mais</h3>
+				<ul>
+					<li><a href="Livro_club.html">Clube de Leitura</a></li>
+					<li><a href="Aprende_diverte.html">Aprenda e Diverte-se</a></li>
+					<li><a href="language_curiosa.html">Linguagem não Sexista</a></li>
+				</ul>
+			</section>
+		</div>
+		<a onclick="topFunction()" id="btnTop" class="volta-topo">↑</a>
+	</nav>
+
+	<footer>© 2021 HTML+CSS Multimédia 2 DeCA. Projeto Final</footer>
+</section>
+<script>
+	/*Back to Top*/
+	//Get the button:
+	mybutton = document.getElementById("btnTop");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () { scrollFunction() };
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+</script>
+</body>
+</html>

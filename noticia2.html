@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>noticia1</title>
+</head>
+<body id="top">
+	<header>
+		<!----------------------company logo e pesquisa----------------------->
+		<div id="logoSearch" class="mobile-centrar">
+			<nav class="home_pesquisa">
+				<div class="tooltip">
+					<a href="index.html" ><img src="./materiais/LOGO.png" alt="" width="80" class="home"></a>
+					<!--Adicionar logo-->
+					<span class="tooltiptext">Início</span>
+				</div>
+				<!--SEARCH-->
+				<div class="search-container">
+					<form>
+						<input type="text" placeholder="Pesquisar..." name="Pesquisar">
+						<button class="search"><img src="./icons/search-solid.svg" alt="" width="15"></button><!--下载图片-->
+					</form>
+				</div>
+			</nav>
+		</div>
+
+			</header>
+
+
+
+		<!---------------------------Desktop menu-------------------------------->
+		<nav class="topnav">
+			<a href="index.html">Início</a>
+			<a href="noticias.html">Notícias</a>
+			<a href="objectivos.html">Objetivos</a>
+			<a href="comoajudar.html">Como ajudar</a>
+			<a href="sobrenos.html">Sobre nós</a>
+			<a href="sabermais.html">Saber mais</a>
+		</nav>
+		<!------------------------------Mobile Menu ------------------------------------->
+			<nav id="mobileMenu">
+				<div class="mobile mobile-two">
+					<div class="header">
+						<div class="menu-toggle tooltip">
+							<div class="line"></div>
+							<div class="line"></div>
+							<span class="tooltiptext">Menu</span>
+						</div>
+					</div>
+					<div class="mobile-nav">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="noticias.html">Notícias</a></li>
+							<li><a href="objectivos.html">Objetivos</a></li>
+							<li><a href="comoajudar.html">Como ajudar</a></li>
+							<li><a href="sobrenos.html">Sobre nós</a></li>
+							<li><a href="sabermais.html">Saber mais</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+		<script>
+		let menu = document.querySelector('.mobile-two .menu-toggle')
+
+		menu.addEventListener('click', ()=>{
+			if (document.querySelector(".mobile-nav").style.display == "none" || document.querySelector(".mobile-nav").style.display == ""){
+
+				document.querySelector('.topnav').style.display = "none";
+				document.getElementById('logoSearch').style.display = "none";
+				document.getElementById('contentNOTICIA').style.display = "none";
+				document.getElementById('footer').style.display = "none";
+				document.querySelector(".mobile-nav").style.display = "block";
+
+			} else {
+				document.getElementById('logoSearch').style.display = "block";
+				document.getElementById('contentNOTICIA').style.display = "block";
+				document.getElementById('footer').style.display = "block";
+				document.querySelector(".mobile-nav").style.display = "none"
+				document.querySelector('.topnav').style.display = "inline-block";
+			}
+		})
+		</script>
+
+	<!---------------------------(Template)DO NOT EDIT ABOVE THIS LINE-------------------------------->
+	<!--------------------noticia1 main content---------------------->
+	<main id="contentNOTICIA">
+
+		<nav class="nav3">
+			<a href="#índice"> Índice de Normas Sociais de Género </a>|
+			<a href="#conclusões"> Principais conclusões </a>|
+			<a href="#links"> Links</a>
+		</nav>
+
+		<section>
+			<h1> A igualdade de género tem abrandado nos anos mais recentes. <br>Como é que os preconceitos afetam a
+				igualdade de género? </h1>
+
+			<article>
+				<p class="pclasse">O Relatório do Desenvolvimento Humano (2019) reconhece que o progresso no sentido da
+					igualdade de género tem abrandado nos anos mais recentes (ver figura 4.3 do relatório). Este facto é
+					justificado por duas ordens de razão: primeiramente, as mulheres revelam um progresso desigual
+					quando comparadas as capacidades básicas e avançadas adquiridas, constatando-se uma maior
+					desigualdade de género nas últimas; e, segundamente, os estereótipos e preconceitos de género,
+					frequentemente, reforçam e explicam estas desigualdades ao basearem-se em crenças sobre o que os
+					outros fazem ou pensam que devem fazer, orientando, assim, ações capazes de restringir o
+					comportamento dos homens e mulheres.</p>
+				<p>As capacidades básicas referem-se a conquistas relacionadas com subsistência e a participação, como
+					ter acesso e completar a escolaridade básica ou poder votar. As capacidades avançadas envolvem
+					agência e mudança, potenciadoras na alteração dos papéis e relações de género. Um exemplo destas
+					últimas é o acesso a níveis mais elevados de escolaridade. Ilustrando, complementarmente, de acordo
+					com os dados de 2019 do Relatório de Desenvolvimento Humano: ao nível político, constatou-se que
+					capacidades básicas como votar apresentam uma igualdade de género muito acentuada em contrapartida
+					com capacidades mais elevadas, apenas 24% dos lugares parlamentares são ocupados por mulheres; ao
+					nível económico, observa-se que as mulheres representam apenas 21 % dos empregadores mundiais e 12%
+					do top de bilionários.</p>
+			</article>
+		</section>
+		<section id="índice">
+
+			<h2>Índice de Normas Sociais de Género</h2>
+			<article>
+				<p class="pclasse">Considerando a importância das normas sociais e dos estereótipos no reforço das
+					identidades de género e na determinação de relações de poder que constrangem as capacidades dos
+					homens e das mulheres, privando a sua plenitude, o Programa de Desenvolvimento das Nações Unidas
+					(UNDP, abreviatura original) criou um novo índice – Normas Sociais de Género (GSNI, abreviatura
+					original), tendo por base os dados do World Values Survey (2005-2009 e 2010- 2014). O objetivo
+					principal é capturar o efeito das crenças sociais na desigualdade de género em múltiplas dimensões,
+					nomeadamente: política, educativa, económica e integridade física (figura 1).</p>
+				<p>A figura 1 exibe os indicadores que foram selecionados do questionário do World Values Survey e as
+					opções consideradas enquanto definição de preconceito que foram integradas no índice geral. Através
+					dos vários indicadores foram criados índices de dimensões e, por fim, o índex das normas sociais de
+					género. No caso do último foram criados dois: (1) o GNSI que mede a percentagem de pessoas com pelo
+					menos um preconceito, e (2) o GNSI2 que mede a percentagem de indivíduos com pelo menos dois
+					preconceitos.</p>
+				<p>Salienta-se que este índice integra 75 países, contemplando cerca de 80% da população do mundo,
+					contudo, Portugal não está incluído.</p>
+					<br>
+				<p class="title_T"><strong>Tabela - Definição de preconceito segundo os indicadores multidimensionais que compõem o índice</strong>
+				</p>
+							<!--Tabela-->
+							<div>
+								<table class="table_language_guia">
+									<tr class="uppercase">
+										<th>Dimensão</th>
+										<th>Indicador</th>
+										<th>Opções</th>
+										<th>Definição de Preconceito</th>
+									</tr>
+									<tr>
+										<td rowspan="2" class="uppercase">Política</td>
+										<td>Os homens são melhores líderes políticos do que as mulheres</td>
+										<td>Concordo plenamente, concordo, discordo, discordo plenamente</td>
+										<td>Concordo plenamente, concordo</td>
+										<tr>
+											<td>As mulheres têm os mesmos direitos que os homens</td>
+											<td>1 (não essencial) a 10 (essencial)</td>
+											<td>Entre 1-7</td>
+										</tr>
+
+
+									<tr>
+										<td class="uppercase">Educação</td>
+										<td>A universidade é mais importante para os homens do que para as mulheres</td>
+										<td>Concordo plenamente, concordo, discordo, discordo plenamente</td>
+										<td>Concordo plenamente, concordo</td>
+									</tr>
+
+									<tr>
+										<td rowspan="2" class="uppercase">Económica</td>
+										<td>Os homens devem ter mais direito a um emprego do que as mulheres</td>
+										<td>Concordo, nenhum, discordo</td>
+										<td>Concordo plenamente, concordo</td>
+										<tr>
+											<td>Os homens são melhores executivos do que as mulheres</td>
+											<td>Concordo plenamente, concordo, discordo, discordo plenamente</td>
+											<td>Concordo</td>
+										</tr>
+
+
+									<tr>
+										<td rowspan="2" class="uppercase">Integridade Física</td>
+										<td>Proxy da violência por parceiro íntimo</td>
+										<td>1 (nunca) a 10 (sempre)</td>
+										<td>Mais acentuado: 2-10</td>
+										<tr>
+											<td>Proxy dos direitos reprodutivos</td>
+											<td>1 (nunca) a 10 (sempre</td>
+											<td>Mais fraco: 1</td>
+										</tr>
+								</table>
+							</div>
+				<p class="direitosautor">Fonte: 2020 Human Development Perspectives “Tackling Social Norms: A game changer for gender
+					inequalities”, p.8.</p>
+
+			</article>
+		</section>
+
+		<section id="conclusões">
+
+			<h2> Principais conclusões</h2>
+			<article>
+				<p class="pclasse"> No conjunto dos 75 países analisados, concluíram que apenas 14% das mulheres e 10%
+					dos homens não possuem preconceitos de género. Ainda como conclusões gerais verifica-se que: (1) os
+					países com maiores preconceitos tendem a registar uma maior desigualdade de género (ver figura 1 da
+					caixa 1 no relatório “Tackling Social Norms”, 2020); (2) os preconceitos são menores na área da
+					educação, cerca de 74% dos indivíduos não possuem estereótipos de género relacionado com a educação;
+					e (3) independentemente da dimensão, as mulheres apresentam menos estereótipos do que os homens.</p>
+				<p> Um ponto importante de destacar relaciona-se com o facto de existir uma relação entre
+					desenvolvimento humano e preconceitos de género, os países com uma maior percentagem de indivíduos
+					com preconceitos são integrantes dos grupos de baixo e médio desenvolvimento humano, assim como
+					exibem desigualdades de género mais acentuadas.</p>
+				<p> Analisando detalhadamente as dimensões, constatam-se os seguintes factos:</p>
+				<p>(1) Ao nível político, cerca de 50% dos indivíduos acham que os homens são melhoreslíderes políticos,
+					de acordo com o relatório. Os países com mais preconceitos ao nível político são: o Catar (91,56%),
+					a Jordânia (91,17%), a Palestina (89,30%), o Iraque (88,33%) e o Kuwait (88,10%). Inversamente está
+					a Andorra (14,08%), a Suécia (16,05%), %), a Noruega (19,51%) a Holanda (21,29%) e a Finlândia
+					(24,58%).</p>
+				<p>(2) Ao nível educativo, os países que consideram que a universidade é mais importante para os homens
+					do que para as mulheres são: o Haiti (59,91%), o Irão (55,42%), o Paquistão (51.11%) e Mali
+					(47,61%). Com menos preconceitos estão: a Andorra (1,81%), a Suécia (2,61%), a Noruega (3,71%), a
+					Austrália (4,09%) e a Holanda (4,63%).</p>
+				<p> (3) Ao nível económico, de acordo com os dados detalhados do relatório, cerca 40% dos indivíduos
+					consideram que os homens são melhores executivos e, aproximadamente, 50% dos homens acreditam que os
+					homens têm mais direito a um trabalho do que as mulheres. Os países com mais preconceitos ao nível
+					económico são: o Azerbaijão (91,97%), o Paquistão (91,02%), a Jordânia (89,42%), o Irão (88,86%) e
+					Mali (88,87%). Repetindo a tendência, com menos preconceitos estão países elevado desenvolvimento
+					humano: a Andorra (8,73%), a Suécia (9,16%), a Holanda (13,56%), os Estados Unidos da América
+					(14,81%) e a Nova Zelândia (16,65%).</p>
+				<p>(4) Ao nível da integridade física, quase 30% dos indivíduos concordaram que é justificável um homem
+					bater no seu parceiro. Os países que apresentam mais preconceitos desta dimensão são: a Ruanda
+					(97,64%), o Zimbabué (96,27%), o Paquistão (93,75%), a Nigéria (92,78%), a Líbia (92,15%), a
+					Indonésia (90,55%) e o Ghana (90,73%). Esta dimensão é a que apresenta uma maior percentagem de
+					preconceitos face à população de cada país. Com um valor menor de preconceitos destacam-se: a
+					Andorra (12,01%), a Suécia (14,13%), a Noruega (16,78%), a Austrália (20,93%) e a Holanda (22,03%).
+				</p>
+
+				<p>Analisando o progresso de 31 países, selecionados por corresponderem aos únicos que tem informação em
+					ambos os períodos de aplicação do inquérito, (2005-2009 | 2010-2014) verifica-se que houve um
+					aumento dos preconceitos de género em 15 destes. Por um lado, os homens no Chile, na Austrália, nos
+					EUA e na Holanda registaram uma diminuição dos preconceitos e, por outro lado, aumentaram na Suécia,
+					na Alemanha, na Índia e no México. Correspondentemente, no caso das mulheres, a tendência é
+					semelhante, mantêm-se os países onde houve um progresso e na Suécia, na índia, na África do Sul e na
+					Roménia intensificaram-se os preconceito.</p>
+
+				<p>Considerando ainda a população geral destes 31 países, constatou-se que os preconceitos aumentaram em
+					todas dimensões, excetuando na educativa: política (54,24% – 56,20%), económica (53,43% – 53,82%),
+					educativa (24,26% – 24,19%), integridade física (68,71% – 69,40%). Complementarmente, no geral,
+					houve um aumento das pessoas com pelo menos um (GNSI) e dois (GNSI2) preconceitos, respetivamente,
+					86,46% para 87,28% e 63,55% para 65,38%. Desagrupando por sexo, verifica-se que a percentagem de
+					indivíduos sem preconceitos diminuiu em ambos: feminino (16,62% – 15,39%) e masculino (10,65% –
+					10,10%).</p>
+			</article>
+		</section>
+
+
+		<section id="links">
+			<article>
+				<h2> Links para os relatórios</h2>
+				<p class="direitosautor"><a href="http://hdr.undp.org/sites/default/files/hdr2019.pdf" target="_blank"></a>
+						<a>http://hdr.undp.org/sites/default/files/hdr2019.pdf </a></p>
+				<p class="direitosautor"><a href="http://hdr.undp.org/sites/default/files/hd_perspectives_gsni.pdf" target="_blank"> http://hdr.undp.org/sites/default/files/hd_perspectives_gsni.pdf</a>
+				</p>
+
+			 <p class="direitosautor"><a href="https://www.observatorio-das-desigualdades.com/2020/03/10/genero/" target="_blank">Elaborado por Ana Filipa Cândido</a></p>
+			</article>
+		</section>
+
+	</main>
+
+
+	<!---------------------------DO NOT EDIT BELOW THIS LINE-------------------------------->
+
+	<section id="footer">
+		<!----------------------------------FOOTER NAVS(Template)-------------------------------->
+		<nav class="footnav">
+			<div class="socialsite">
+				<a href="https://www.facebook.com/globalgoalsUN/" target="_blank"><img src="./icons/facebook-square-brands.svg" alt="" width="20"></a>
+				<a href="https://twitter.com/globalgoalsun" target="_blank"><img src="./icons/twitter-square-brands.svg" alt="" width="20"></a>
+				<a href="https://www.instagram.com/unitednations/" target="_blank"><img src="./icons/instagram-square-brands.svg" alt="" width="20"></a>
+			</div>
+			<div>
+				<h3>Subscreva a nossa newsletter</h3>
+				<form action="http://www3.ca.ua.pt/formlist.asp" method="post">
+					<div class="subscreva">
+						<div><label for="cname" class="subscreva1">Primeiro nome</label><br>
+							<input type="text" id="cname" name="cname">
+						</div>
+						<div><label for="email" class="subscreva1">E-mail</label><br>
+							<input name="email" type="email" id="email" value="">
+						</div>
+						<div><label for="pais" class="subscreva1">País</label><br>
+							<input type="text" id="pais" name="pais">
+						</div>
+					</div>
+					<br>
+					<input type="checkbox" name="Aceito" value="Aceito" id="Aceito">
+					<label for="Aceito" class="ACEITO"> Aceito a política de privacidade</label>
+					<br>
+					<button class="subescrevabutton">Subscreva</button>
+				</form>
+			</div>
+			<div id="footerEnd">
+				<section>
+					<h3>Junta-nos</h3>
+					<ul>
+						<li><a href="INSCREVA.html">Inscreva-se</a></li>
+						<li><a href="comoajudar.html">Contribua</a></li>
+					</ul>
+					<br>
+				</section>
+
+				<section>
+					<h3>Contacta-nos</h3>
+					<a href="mailto:LutaContraDesigualdade@portugal.pt" class="email">
+						 LutaContraDesigualdade@portugal.pt</a>
+					<p class="footp">Se tiver sugestões, não hesite em contactar-nos.</p>
+				</section>
+
+				<section id="footerRight">
+					<h3>Saber mais</h3>
+					<ul>
+						<li><a href="Livro_club.html">Clube de Leitura</a></li>
+						<li><a href="Aprende_diverte.html">Aprenda e Diverte-se</a></li>
+						<li><a href="language_curiosa.html">Linguagem não Sexista</a></li>
+					</ul>
+				</section>
+			</div>
+
+			<a onclick="topFunction()" id="btnTop" class="volta-topo">↑</a>
+		</nav>
+
+		<footer>© 2021 HTML+CSS Multimédia 2 DeCA. Projeto Final</footer>
+	</section>
+	<script>
+		/*Back to Top*/
+		//Get the button:
+		mybutton = document.getElementById("btnTop");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
+</body>
+
+</html>

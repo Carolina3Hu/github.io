@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Homepage</title>
+</head>
+<body id="top">
+
+	<header>
+<!----------------------company logo e pesquisa----------------------->
+<div id="logoSearch" class="mobile-centrar">
+	<nav class="home_pesquisa">
+		<div class="tooltip">
+			<a href="index.html" ><img src="./materiais/LOGO.png" alt="" width="80" class="home"></a>
+			<!--Adicionar logo-->
+			<span class="tooltiptext">Início</span>
+		</div>
+		<!--SEARCH-->
+		<div class="search-container">
+			<form>
+				<input type="text" placeholder="Pesquisar..." name="Pesquisar">
+				<button class="search"><img src="./icons/search-solid.svg" alt="" width="15"></button><!--下载图片-->
+			</form>
+		</div>
+	</nav>
+</div>
+
+	</header>
+
+
+<!---------------------------Desktop menu-------------------------------->
+<nav class="topnav">
+	<a href="index.html">Início</a>
+	<a href="noticias.html">Notícias</a>
+	<a href="objectivos.html">Objetivos</a>
+	<a href="comoajudar.html">Como ajudar</a>
+	<a href="sobrenos.html">Sobre nós</a>
+	<a href="sabermais.html">Saber mais</a>
+</nav>
+<!------------------------------Mobile Menu ------------------------------------->
+	<nav id="mobileMenu">
+		<div class="mobile mobile-two">
+			<div class="header">
+				<div class="menu-toggle tooltip">
+					<div class="line"></div>
+					<div class="line"></div>
+					<span class="tooltiptext">Menu</span>
+				</div>
+			</div>
+			<div class="mobile-nav">
+				<h2>Menu</h2>
+				<ul>
+					<li><a href="index.html">Início</a></li>
+					<li><a href="noticias.html">Notícias</a></li>
+					<li><a href="objectivos.html">Objetivos</a></li>
+					<li><a href="comoajudar.html">Como ajudar</a></li>
+					<li><a href="sobrenos.html">Sobre nós</a></li>
+					<li><a href="sabermais.html">Saber mais</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+<script>
+let menu = document.querySelector('.mobile-two .menu-toggle')
+
+menu.addEventListener('click', ()=>{
+    if (document.querySelector(".mobile-nav").style.display == "none" || document.querySelector(".mobile-nav").style.display == ""){
+
+        document.querySelector('.topnav').style.display = "none";
+        document.getElementById('logoSearch').style.display = "none";
+        document.getElementById('content').style.display = "none";
+        document.getElementById('footer').style.display = "none";
+        document.querySelector(".mobile-nav").style.display = "block";
+
+    } else {
+        document.getElementById('logoSearch').style.display = "block";
+        document.getElementById('content').style.display = "block";
+        document.getElementById('footer').style.display = "block";
+        document.querySelector(".mobile-nav").style.display = "none"
+        document.querySelector('.topnav').style.display = "inline-block";
+    }
+})
+</script>
+<!---------------------------(Template)DO NOT EDIT ABOVE THIS LINE-------------------------------->
+
+<!--------------------homepage content---------------------->
+	<main id="content">
+		<div class="Inscreva_doar">
+			<div class="bg_color1">
+			<h1 class="homepage_h1">Tenha uma voz ativa na luta pela igualdade de direitos e tratamento justo para mulheres e todas as classes de seres humanos.</h1>
+			<div class="homeButtons">
+				<a href="INSCREVA.html" class="Inscreva_doar1">Inscreva-se</a>
+				<a href="comoajudar.html" class="Inscreva_doar1">Contribua</a>
+			</div>
+		    </div>
+		</div>
+		<!---------------------------------------------------------------->
+		<h1>Paz e igualdade num planeta sustentável!</h1>
+		<!------------------------------------------------------------>
+		<section class="section_homepage">
+			<h2>Sugestões</h2>
+			<!--display grid-->
+			<div class="grelha_container">
+				<!--Imgs+Resumos follow-->
+				<article class="grelha-art-destaque">
+					<h3>Clube de leitura</h3>
+					<!---a nossa revista livre PDF(pode usar mesmo conteúdo do site), recomendações com lista do livros-->
+					<img src="./materiais/homepage/livro_club1.jpg" alt="">
+					<a href="Livro_club.html"><br>
+					 Saber mais...</a>
+				</article>
+
+				<article class="grelha-art">
+					<h3>Aprende e diverte-te</h3><!--games-->
+
+					<img src="./Materiais/homepage/jogo2.jpg" alt="">
+
+					<a href="Aprende_diverte.html"> Saber mais..</a>
+				</article>
+
+				<article class="grelha-art">
+				<h3>Linguagem não sexista</h3>
+					<img src="./materiais/homepage/inclusive_language.jpg" alt="">
+
+					<a href="language_curiosa.html"> Saber mais...</a>
+				</article>
+			</div>
+				</section>
+
+				<section class="section_homepage">
+					<h2>Notícias em destaque</h2>
+					<!---display grid--->
+					<div class="grelha_container">
+						<!--Imgs+Resumos follow-->
+						<article class="grelha-art-destaque">
+						<img src="./Materiais/homepage/video_screenshot1.jpg" alt="">
+						<h3 class='h3_left'>a igualdade de género é fundamental para um mundo melhor.
+							<a href="noticia1.html">Saber mais...</a></h3>
+					</article>
+
+					<article class="grelha-art">
+						<img src="Materiais/img/igualdade_genero.jpg" alt="">
+						<h3 class='h3_left'>A igualdade de género tem abrandado nos mais recentes.
+							<a href="noticia2.html">Saber mais...</a></h3>
+
+					</article>
+					<article class="grelha-art">
+						<img src="Materiais/senhora1.jpg" alt="">
+						<h3 class='h3_left'>Reduzir a desigualdade para gerar oportunidades. 						<a href="noticia3.html">Saber mais...</a></h3>
+
+					</article>
+				</div>
+				</section>
+	</main>
+
+<!---------------------------DO NOT EDIT BELOW THIS LINE-------------------------------->
+
+	<section id="footer">
+		<!----------------------------------FOOTER NAVS(Template)-------------------------------->
+		<nav class="footnav">
+			<div class="socialsite">
+				<a href="https://www.facebook.com/globalgoalsUN/"><img src="./icons/facebook-square-brands.svg" alt="" width="20"></a>
+				<a href="https://twitter.com/globalgoalsun"><img src="./icons/twitter-square-brands.svg" alt="" width="20"></a>
+				<a href="https://www.instagram.com/unitednations/"><img src="./icons/instagram-square-brands.svg" alt="" width="20"></a>
+			</div>
+			<div>
+				<h3>Subscreva a nossa newsletter</h3>
+				<form action="http://www3.ca.ua.pt/formlist.asp" method="post">
+					<div class="subscreva">
+						<div><label for="cname" class="subscreva1">Primeiro nome</label><br>
+							<input type="text" id="cname" name="cname">
+						</div>
+						<div><label for="email" class="subscreva1">E-mail</label><br>
+							<input name="email" type="email" id="email" value="">
+						</div>
+						<div><label for="pais" class="subscreva1">País</label><br>
+							<input type="text" id="pais" name="pais">
+						</div>
+					</div>
+					<br>
+					<input type="checkbox" name="Aceito" value="Aceito" id="Aceito">
+					<label for="Aceito" class="ACEITO"> Aceito a política de privacidade</label>
+					<br>
+					<button class="subescrevabutton">Subscreva</button>
+				</form>
+			</div>
+			<div id="footerEnd">
+				<section>
+					<h3>Junta-nos</h3>
+					<ul>
+						<li><a href="INSCREVA.html">Inscreva-se</a></li>
+						<li><a href="comoajudar.html">Contribua</a></li>
+					</ul>
+					<br>
+				</section>
+
+				<section>
+					<h3>Contacta-nos</h3>
+					<a href="mailto:LutaContraDesigualdade@portugal.pt" class="email">
+						 LutaContraDesigualdade@portugal.pt</a>
+					<p class="footp">Se tiver sugestões, não hesite em contactar-nos.</p>
+				</section>
+
+				<section id="footerRight">
+					<h3>Saber mais</h3>
+					<ul>
+						<li><a href="Livro_club.html">Clube de Leitura</a></li>
+						<li><a href="Aprende_diverte.html">Aprenda e Diverte-se</a></li>
+						<li><a href="language_curiosa.html">Linguagem não Sexista</a></li>
+					</ul>
+				</section>
+			</div>
+
+			<a onclick="topFunction()" id="btnTop" class="volta-topo">↑</a>
+		</nav>
+
+		<footer>© 2021 HTML+CSS Multimédia 2 DeCA. Projeto Final</footer>
+	</section>
+	<script>
+        /*Back to Top*/
+        //Get the button:
+        mybutton = document.getElementById("btnTop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>noticia3</title>
+</head>
+<body id="top">
+	<!---------------------reference link do site------------------>
+	<header>
+		<!----------------------company logo e pesquisa----------------------->
+		<div id="logoSearch" class="mobile-centrar">
+			<nav class="home_pesquisa">
+				<div class="tooltip">
+					<a href="index.html" ><img src="./materiais/LOGO.png" alt="" width="80" class="home"></a>
+					<!--Adicionar logo-->
+					<span class="tooltiptext">Início</span>
+				</div>
+				<!--SEARCH-->
+				<div class="search-container">
+					<form>
+						<input type="text" placeholder="Pesquisar..." name="Pesquisar">
+						<button class="search"><img src="./icons/search-solid.svg" alt="" width="15"></button><!--下载图片-->
+					</form>
+				</div>
+			</nav>
+		</div>
+
+			</header>
+
+
+		<!---------------------------Desktop menu-------------------------------->
+		<nav class="topnav">
+			<a href="index.html">Início</a>
+			<a href="noticias.html">Notícias</a>
+			<a href="objectivos.html">Objetivos</a>
+			<a href="comoajudar.html">Como ajudar</a>
+			<a href="sobrenos.html">Sobre nós</a>
+			<a href="sabermais.html">Saber mais</a>
+		</nav>
+		<!------------------------------Mobile Menu ------------------------------------->
+			<nav id="mobileMenu">
+				<div class="mobile mobile-two">
+					<div class="header">
+						<div class="menu-toggle tooltip">
+							<div class="line"></div>
+							<div class="line"></div>
+							<span class="tooltiptext">Menu</span>
+						</div>
+					</div>
+					<div class="mobile-nav">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="noticias.html">Notícias</a></li>
+							<li><a href="objectivos.html">Objetivos</a></li>
+							<li><a href="comoajudar.html">Como ajudar</a></li>
+							<li><a href="sobrenos.html">Sobre nós</a></li>
+							<li><a href="sabermais.html">Saber mais</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+		<script>
+		let menu = document.querySelector('.mobile-two .menu-toggle')
+
+		menu.addEventListener('click', ()=>{
+			if (document.querySelector(".mobile-nav").style.display == "none" || document.querySelector(".mobile-nav").style.display == ""){
+
+				document.querySelector('.topnav').style.display = "none";
+				document.getElementById('logoSearch').style.display = "none";
+				document.getElementById('contentNOTICIA').style.display = "none";
+				document.getElementById('footer').style.display = "none";
+				document.querySelector(".mobile-nav").style.display = "block";
+
+			} else {
+				document.getElementById('logoSearch').style.display = "block";
+				document.getElementById('contentNOTICIA').style.display = "block";
+				document.getElementById('footer').style.display = "block";
+				document.querySelector(".mobile-nav").style.display = "none"
+				document.querySelector('.topnav').style.display = "inline-block";
+			}
+		})
+		</script>
+<!---------------------------(Template)DO NOT EDIT ABOVE THIS LINE-------------------------------->
+<!--------------------noticia3 main content---------------------->
+<main id="contentNOTICIA">
+
+
+<section id="topo">
+</section>
+<article>
+<h1>Pobreza, desigualdade e clima: as opções que definem a nossa época, escreve David Malpash</h1>
+<h3>Pandemia deixa cicatrizes duradouras. Desigualdade reflete-se na vacinação. Questão climática pede investimentos. Banco Mundial responde aos desafios.</h3>
+
+<img src="Materiais/Sede.jpg" alt="Sede do Banco Mundial, em Washington" height="400" width="800">
+<p class="direitosautor">Sede do Banco Mundial, em Washington<br>
+DAVID MALPASS
+26.mai.2021 (quarta-feira) - 5h50
+Atualizado: 26.mai.2021 (quarta-feira) - 6h41</p>
+
+</article>
+<section id="pandemia">
+<article>
+<p  class="pclasse">A pandemia da covid-19 afetou muito mais os pobres e vulneráveis dos países em desenvolvimento, agravando a desigualdade, a ineficiência dos sistemas de saúde, o deficit de aprendizagem, a estagnação dos rendimentos, o aumento dos conflitos e da violência, a seleção inadequada de contratos de dívida e as mudanças climáticas. </p>
+<p>Infelizmente, os atrasos no início do processo de vacinação nos países em desenvolvimento estão aprofundando a desigualdade global e colocando em risco centenas de milhões de pessoas idosas e vulneráveis.</p>
+<p>Além dos danos imediatos, a pandemia da covid-19 está deixando cicatrizes duradouras: crianças perderam a escolaridade vital e os programas de nutrição e vacinação infantil; as empresas entraram em colapso; as poupanças e os ativos se esgotaram e o superendividamento está reduzindo os investimentos e evitando que se materializem os gastos sociais urgentes.</p>
+<p>Em abril, o G-20 anunciou um Marco Comum segundo o qual os países com uma carga de dívida insustentável poderiam alcançar uma posição de dívida moderada. A história mostra que os países que não conseguem acertar suas dívidas pendentes não crescem e não alcançam reduções duradouras da pobreza.</p>
+<p>O desequilíbrio das políticas de estímulo fiscal e monetário é outro fator que contribui para a desigualdade tanto dentro quanto entre os países. Observamos, por exemplo, um aumento nos preços –impulsionado pela demanda nas economias avançadas– enquanto a insegurança alimentar afeta muitos dos pobres do mundo. A política monetária global sofre um desequilíbrio ainda maior porque as compras de títulos do banco central e a regulamentação do crédito direcionam recursos apenas para as instituições mais seguras e sofisticadas, excluindo outras.</p>
+<p>A nossa resposta coletiva à pobreza, à desigualdade e às alterações climáticas será a definição das escolhas da nossa época. Os desafios são imensos, exigindo novas abordagens tanto nos países em desenvolvimento como nas economias avançadas. O Grupo Banco Mundial está dedicado a ajudar os países a alcançarem uma mudança construtiva e um desenvolvimento sustentável enquanto trabalhamos com os setores público e privado para cumprir a nossa missão principal de aliviar a pobreza e impulsionar a prosperidade compartilhada.</p>
+<p class="direitosautor">Artigo retirado de:<a href=" https://www.poder360.com.br/opiniao/economia/pobreza-desigualdade-e-clima-as-opcoes-que-definem-a-nossa-epoca-escreve-david-malpass/" target="_blank"> Poder 360</a></p>
+</article>
+</section>
+
+
+</main>
+
+
+
+<!---------------------------DO NOT EDIT BELOW THIS LINE-------------------------------->
+
+<section id="footer">
+	<!----------------------------------FOOTER NAVS(Template)-------------------------------->
+	<nav class="footnav">
+		<div class="socialsite">
+			<a href="https://www.facebook.com/globalgoalsUN/" target="_blank"><img src="./icons/facebook-square-brands.svg" alt="" width="20"></a>
+			<a href="https://twitter.com/globalgoalsun" target="_blank"><img src="./icons/twitter-square-brands.svg" alt="" width="20"></a>
+			<a href="https://www.instagram.com/unitednations/" target="_blank"><img src="./icons/instagram-square-brands.svg" alt="" width="20"></a>
+		</div>
+		<div>
+			<h3>Subscreva a nossa newsletter</h3>
+			<form action="http://www3.ca.ua.pt/formlist.asp" method="post">
+				<div class="subscreva">
+					<div><label for="cname" class="subscreva1">Primeiro nome</label><br>
+						<input type="text" id="cname" name="cname">
+					</div>
+					<div><label for="email" class="subscreva1">E-mail</label><br>
+						<input name="email" type="email" id="email" value="">
+					</div>
+					<div><label for="pais" class="subscreva1">País</label><br>
+						<input type="text" id="pais" name="pais">
+					</div>
+				</div>
+				<br>
+				<input type="checkbox" name="Aceito" value="Aceito" id="Aceito">
+				<label for="Aceito" class="ACEITO"> Aceito a política de privacidade</label>
+				<br>
+				<button class="subescrevabutton">Subscreva</button>
+			</form>
+		</div>
+		<div id="footerEnd">
+			<section>
+				<h3>Junta-nos</h3>
+				<ul>
+					<li><a href="INSCREVA.html">Inscreva-se</a></li>
+					<li><a href="comoajudar.html">Contribua</a></li>
+				</ul>
+				<br>
+			</section>
+
+			<section>
+				<h3>Contacta-nos</h3>
+				<a href="mailto:LutaContraDesigualdade@portugal.pt" class="email">
+					 LutaContraDesigualdade@portugal.pt</a>
+				<p class="footp">Se tiver sugestões, não hesite em contactar-nos.</p>
+			</section>
+
+			<section id="footerRight">
+				<h3>Saber mais</h3>
+				<ul>
+					<li><a href="Livro_club.html">Clube de Leitura</a></li>
+					<li><a href="Aprende_diverte.html">Aprenda e Diverte-se</a></li>
+					<li><a href="language_curiosa.html">Linguagem não Sexista</a></li>
+				</ul>
+			</section>
+		</div>
+
+		<a onclick="topFunction()" id="btnTop" class="volta-topo">↑</a>
+	</nav>
+
+	<footer>© 2021 HTML+CSS Multimédia 2 DeCA. Projeto Final</footer>
+</section>
+<script>
+	/*Back to Top*/
+	//Get the button:
+	mybutton = document.getElementById("btnTop");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () { scrollFunction() };
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+</script>
+</body>
+</html>

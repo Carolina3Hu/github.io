@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>noticia1</title>
+</head>
+<body id="top">
+	<header>
+		<!----------------------company logo e pesquisa----------------------->
+		<div id="logoSearch" class="mobile-centrar">
+			<nav class="home_pesquisa">
+				<div class="tooltip">
+					<a href="index.html" ><img src="./materiais/LOGO.png" alt="" width="80" class="home"></a>
+					<!--Adicionar logo-->
+					<span class="tooltiptext">Início</span>
+				</div>
+				<!--SEARCH-->
+				<div class="search-container">
+					<form>
+						<input type="text" placeholder="Pesquisar..." name="Pesquisar">
+						<button class="search"><img src="./icons/search-solid.svg" alt="" width="15"></button><!--下载图片-->
+					</form>
+				</div>
+			</nav>
+		</div>
+
+			</header>
+
+
+		<!---------------------------Desktop menu-------------------------------->
+		<nav class="topnav">
+			<a href="index.html">Início</a>
+			<a href="noticias.html">Notícias</a>
+			<a href="objectivos.html">Objetivos</a>
+			<a href="comoajudar.html">Como ajudar</a>
+			<a href="sobrenos.html">Sobre nós</a>
+			<a href="sabermais.html">Saber mais</a>
+		</nav>
+		<!------------------------------Mobile Menu ------------------------------------->
+			<nav id="mobileMenu">
+				<div class="mobile mobile-two">
+					<div class="header">
+						<div class="menu-toggle tooltip">
+							<div class="line"></div>
+							<div class="line"></div>
+							<span class="tooltiptext">Menu</span>
+						</div>
+					</div>
+					<div class="mobile-nav">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="noticias.html">Notícias</a></li>
+							<li><a href="objectivos.html">Objetivos</a></li>
+							<li><a href="comoajudar.html">Como ajudar</a></li>
+							<li><a href="sobrenos.html">Sobre nós</a></li>
+							<li><a href="sabermais.html">Saber mais</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+		<script>
+		let menu = document.querySelector('.mobile-two .menu-toggle')
+
+		menu.addEventListener('click', ()=>{
+			if (document.querySelector(".mobile-nav").style.display == "none" || document.querySelector(".mobile-nav").style.display == ""){
+
+				document.querySelector('.topnav').style.display = "none";
+				document.getElementById('logoSearch').style.display = "none";
+				document.getElementById('contentNOTICIA').style.display = "none";
+				document.getElementById('footer').style.display = "none";
+				document.querySelector(".mobile-nav").style.display = "block";
+
+			} else {
+				document.getElementById('logoSearch').style.display = "block";
+				document.getElementById('contentNOTICIA').style.display = "block";
+				document.getElementById('footer').style.display = "block";
+				document.querySelector(".mobile-nav").style.display = "none"
+				document.querySelector('.topnav').style.display = "inline-block";
+			}
+		})
+		</script>
+<!---------------------------(Template)DO NOT EDIT ABOVE THIS LINE-------------------------------->
+
+<!--------------------noticia2 main content---------------------->
+<main id="contentNOTICIA">
+
+<section>
+	<article>
+		<nav class="nav3">
+		<a href="#Desigualdade">Desigualdade </a>|
+				<a href="#Discriminação"> Discriminação </a>|
+				<a href="#História"> História </a>|
+				<a href="#Violência"> Violência </a>|
+				<a href="#Assédio"> Assédio </a>|
+				<a href="#Hollywood"> Hollywood </a>|
+				<a href="#Consequências"> Consequências </a>|
+				<a href="#Espaço"> Espaço </a>|
+				<a href="#julgamento"> Julgamento </a>|
+				<a href="#Homens"> Homens </a>|
+				<a href="#áreas"> Áreas </a>|
+				<a href="#Mudança"> Mudança </a>|
+				<a href="#Inclusão"> Inclusão </a>|
+				<a href="#tecnologia"> Tecnologia </a>|
+				<a href="#Política"> Política </a>|
+				<a href="#ONU"> ONU </a>|
+				<a href="#Feminismo"> Feminismo</a>
+	</nav>
+
+	 <h1>Guterres: A igualdade de género é fundamental para um mundo melhor</h1>
+
+<p>27 fevereiro 2020 | Mulheres</p>
+<p class="pclasse">Em discurso para universitários, em Nova Iorque, secretário-geral diz que é preciso “transformar, urgentemente, e redistribuir o poder” para fazer com que a igualdade entre homens e mulheres possa ser uma realidade no século 21.<p>
+<p>O secretário-geral da ONU afirmou que “em todos os lugares, mulheres estão em situação pior do que homens, simplesmente porque são mulheres.”</p>
+<p>A declaração de António Guterres ocorreu na New School, uma das universidades mais respeitadas de Nova Iorque, especializada em artes, design, políticas públicas e ciências sociais.</p>
+<section id="Desigualdade">
+
+<h2>Desigualdade</h2>
+<article>
+<p class="pclasse">Ele falou aos estudantes sobre “Mulheres e Poder” e afirmou que a falta de inclusão da mulher em processos decisórios é uma questão de poder.</p>
+
+<p>O chefe da ONU contou que “como um homem nascido na Europa Ocidental”, desfrutou “de muitos privilégios.” Mas, relatou que a “infância sob uma ditadura militar em Portugal” abriu os seus “olhos para a injustiça e a opressão.”</p>
+<p>Por isso, ao longo de sua carreira política, e ainda como líder da agência de refugiados das Nações Unidas, ele sempre se sentiu “compelido a lutar por justiça, igualdade e direitos humanos.”</p>
+
+<p>Atualmente, Guterres disse que observa “uma grande injustiça em todo o mundo, um abuso que clama por atenção”, que são a “desigualdade de género e discriminação contra mulheres e meninas.”</p>
+</article>
+</section>
+</article>
+</section>
+<section id="Discriminação">
+<article>
+<h2>Discriminação</h2>
+<p class="pclasse">Ele destacou que “as mulheres migrantes e refugiadas, pessoas com deficiência e as mulheres pertencentes a minorias de todos os tipos enfrentam barreiras ainda maiores.” Para ele, todos são prejudicados por essa discriminação.</p>
+
+<p>Guterres afirmou que “assim como a escravidão e o colonialismo eram uma mancha nos séculos anteriores, a desigualdade das mulheres deveria” envergonhar o mundo no século 21. Para ele, isso não é apenas inaceitável, mas sim uma falta de inteligência.</p>
+
+<p>  O secretário-geral acredita que a “participação igual das mulheres é vital para a estabilidade, ajuda a evitar conflitos e promove o desenvolvimento sustentável e inclusivo.” Ele acrescentou que “a igualdade de género é o pré-requisito para um mundo melhor.”</p>
+<p>Guterres mencionou jovens mulheres da atualidade, como Malala Yousafzai e Nadia Murad.</p>
+<img src="Materiais/Malala.jpg" alt="Malala Yousafzai e Nadia Murad" height="300" width="600">
+
+<p class="direitosautor">Foto: ONU/Mark Garten/Manuel Elias</p>
+<section id="História">
+<article>
+<h2>História</h2>
+<p class="pclasse">António Guterres lembrou que “as mulheres lutam pelos seus direitos há séculos.” Como exemplo, citou a rainha Nzinga Mbandi, do Mbundu, que há 500 anos “travou uma guerra contra o domínio colonial português” no que é hoje o território de Angola.</p>
+
+<p>Outros exemplos foram Mary Wollstonecraft, autora da reivindicação dos direitos das mulheres em 1792, e Sojourner Truth, que fez um apelo apaixonado pelos direitos das mulheres enquanto lutava pela abolição dos escravos.</p>
+
+<p>Guterres mencionou jovens mulheres da atualidade, como Malala Yousafzai e Nadia Murad, que “estão quebrando barreiras e criando novos modelos de liderança.”</p>
+</article>
+</section>
+</article>
+</section>
+<section id="Violência">
+<article>
+<h2>Violência</h2>
+<p class="pclasse">Mas, apesar desses avanços, “o estado dos direitos das mulheres permanece terrível” e a “desigualdade e discriminação são a norma, em toda parte.”</p>
+
+<p>O líder das Nações Unidas notou que “a violência contra as mulheres, incluindo o feminicídio, ocorre em níveis epidêmicos.” Dados da ONU indicam que mais de uma em cada três mulheres experimentará violência de alguma forma durante sua vida.</p>
+
+<p>Segundo Guterres, as “proteções legais contra estupro e violência doméstica estão sendo diluídas ou revertidas.”  A prova é o estupro no casamento, que “continua sendo legal em 34 países.”</p>
+
+<p>Os direitos sexuais e reprodutivos femininos também estão sendo “ameaçados por todos os lados.”</p>
+<img src="Materiais/Mural.jpg" alt=" Mural em uma parede da cidade egípcia de Tunis" height="340" width="562">
+<p class="direitosautor">Um mural numa parede da cidade egípcia de Tunis mostra o importante papel das mulheres na comunidade. <br>Foto: ONU News/Matt Wells</p>
+</article>
+</section>
+<section id="Assédio">
+<article>
+<h2>Assédio</h2>
+<p class="pclasse">António Guterres lembrou que “líderes e figuras públicas femininas enfrentam assédio, ameaças e abuso, na internet e fora dela” e que as mulheres são excluídas de negociações de paz e também de  “governos aos conselhos corporativos e cerimônias de premiação”. E citou que “políticas que penalizam as mulheres, como austeridade e reprodução coercitiva, estão de novo na moda.”</p>
+
+<p>Para ele, o mundo é “chefiado por homens, com uma cultura dominada por homens” e a “igualdade de gênero é fundamentalmente uma questão de poder.” Ele observou que “as estruturas de poder dos homens sustentam” as economias, sistemas políticos e corporações.</p>
+</article>
+</section>
+<section id="Hollywood">
+<article>
+<h2>Hollywood</h2>
+<p class="pclasse">Ao falar do poder masculino fora da política, Guterres ressaltou que “a fama de Hollywood não protege as mulheres dos homens que exercem poder físico, emocional e profissional sobre elas”, e elogiou “aqueles que se manifestaram com coragem e revidaram.”</p>
+
+<p>Ele acredita que “uma camada oculta de desigualdade está embutida nas instituições e estruturas que governam todas” as vidas, onde as “mulheres não são levadas em consideração e suas experiências não importam.”</p>
+<video height="526" width="935" controls><source src="Materiais/Video_Guterres.mp4" type="video/mp4"></video>
+</article>
+</section>
+<section id="Consequências">
+<article>
+<h2>  Consequências </h2>
+<p class="pclasse">  Entre as consequências, estão por exemplo, os riscos de as mulheres serem feridas em um acidente de carro, que segundo o chefe da ONU, são maiores porque “assentos e cintos de segurança são adequados ao padrão do homem.”
+
+<p>Outra indicação é a taxa de mortalidade de mulheres devido a ataque cardíacos, que é mais alta porque os instrumentos “de diagnóstico são projetados” com base em problemas apresentados por homens.
+</article>
+</section>
+<section id="Espaço">
+<article>
+<h2>Espaço</h2>
+<p class="pclasse">O espaço também foi usado como exemplo. Guterres lembrou que mais de 150 homens caminharam no espaço, mas que apenas um pequeno grupo de mulheres teve esta oportunidade, “em parte porque os trajes espaciais são projetados” para o padrão dos homens.</p>
+<p>Guterres comentou ainda que “nenhuma mulher pisou na lua, embora as matemáticas tenham desempenhado um papel essencial na colocação de homens lá.” Segundo ele, “com demasiada frequência, ao lado da violência, controle, estruturas de poder dominadas por homens e discriminação oculta, mulheres e meninas enfrentam séculos de misoginia e ofuscação de suas realizações.”</p>
+<img src="Materiais/Mulher_deslocada.jpg" alt=" Mural em uma parede da cidade egípcia de Tunis" height="340" width="562">
+<p class="direitosautor">
+Mulher deslocada pelo conflito em Diffa, no Níger, coleta água em ponto de distribuição. <br>Foto: Ocha</p>
+</article>
+</section>
+<section id="julgamento">
+<article>
+<h2>Julgamento</h2>
+<p class="pclasse">O chefe da ONU disse que a “misoginia está em toda parte.” Desde a ridicularização das mulheres “como histéricas ou hormonais”, ao rotineiro julgamento delas “com base em sua aparência”, e também dos “mitos e tabus que cercam as funções corporais naturais das mulheres.”</p>
+
+<p>Por outro lado, ele acredita que  “através dos séculos e culturas, palavras como "génio" e "brilhante" são usadas com muito mais frequência para descrever mais homens do que mulheres.”
+</article>
+</section>
+<section id="Homens">
+<article>
+<h2>Homens</h2>
+<p class="pclasse">Para ele, os “danos causados ​​pelo patriarcado e pela desigualdade vão muito além das mulheres e meninas.” Guterres destacou que os homens “também têm um género”, e que quando este é definido de forma tão rígida, “pode prender homens e meninos em estereótipos que envolvem comportamento arriscado, agressão física e falta de vontade de procurar aconselhamento ou apoio.”</p>
+
+<p>O chefe da ONU argumentou que a “igualdade de género traz enormes benefícios para as relações pessoais dos homens” e que quando eles “compartilham cuidados e passam mais tempo com suas famílias são mais felizes e têm filhos mais felizes.”</p>
+
+<p>Por isso, “a transformação do equilíbrio de poder é essencial”. Segundo Guterres, é “fundamental resolver alguns dos problemas mais prejudiciais e difíceis de tratar” dessa  ​época, que vão desde “o aprofundamento da desigualdade e polarização até a crise climática.”</p>
+</article>
+</section>
+<section id="áreas">
+<article>
+<h2>Áreas</h2>
+<p class="pclasse">O secretário-geral citou cinco áreas importantes para o alcance da igualdade de género. </p>
+
+<p>A primeira é relacionada ao conflito e a violência. Guterres destacou que “em algumas das partes mais violentas do mundo, os níveis de feminicídio, a morte de mulheres, são comparáveis ​​a uma zona de guerra” e que as taxas de impunidade “estão acima de 95% em alguns países”.</p>
+
+<p>O chefe da ONU disse que, homens estão “travando guerra contra as mulheres, mas ninguém está pedindo um cessar-fogo ou impondo sanções.” Ele mencionou ainda o estupro e a escravidão sexual, que são “rotineiramente usados ​​como tática de guerra”.</p>
+
+<p>E lembrou que “as Nações Unidas estão comprometidas em colocar as mulheres no centro” dos esforços de “prevenção, manutenção da paz, construção da paz e mediação, e em aumentar o número” de mulheres nas missões paz.</p>
+<img src="Materiais/Mulheres.jpg" alt=" Fotografia de três senhoras" height="400" width="800">
+<p class="direitosautor"> Clarke
+Em parceria com o Escritório de Direitos Humanos da ONU, a organização regional apresenta sete ações aos países do continente para proteger as mulheres.<br>Foto: Ocha/Giles</p>
+</article>
+</section>
+
+<section>
+<article>
+<section id="Mudança">
+<article>
+<h2>Mudança Climática</h2>
+<p class="pclasse">A segunda área é relacionada à mudança climática, que segundo Guterres, é uma emergência existencial que é o “resultado de decisões tomadas principalmente por homens, mas que têm um impacto desproporcional sobre mulheres e meninas.”</p>
+
+<p>Ele acrescentou que o “impacto da desigualdade de género na ação climática é mais profundo.” As iniciativas para reduzir e reciclar são predominantemente comercializadas para as mulheres, enquanto os homens são mais propensos a confiar em soluções tecnológicas não-testadas.</p>
+
+<p>Além disso, existem “muitas evidências de que as mulheres são mais abertas que os homens para reduzir o seu impacto ambiental pessoal.”</p>
+
+<p>Guterres disse que é grato aos jovens, incluindo muitos dos que estavam acompanhando o discurso dele, e “que estão lutando pela ação climática e igualdade de género, reconhecendo a realidade de identidades e soluções não binárias.” Para ele, “a postura machista não salvará” o planeta e a “igualdade de gênero, incluindo o aumento de homens e a responsabilidade, é essencial” para se vencer a emergência climática.</p>
+</article>
+</section>
+</article>
+</section>
+<section id="Inclusão">
+<article>
+<h2>Inclusão</h2>
+<p class="pclasse">A terceira área é relacionada à construção de economias inclusivas. Guterres perguntou: Como posso dizer as minhas netas que as netas de suas netas ainda receberão menos que um homem pelo mesmo trabalho?</p>
+
+<p>Em todo o mundo, as mulheres ainda ganham apenas 77 centavos de um dólar ganho pelos homens e a disparidade salarial entre os sexos é uma das razões pelas quais 70% dos pobres do mundo são mulheres e meninas.</p>
+
+<p>Além disso, mulheres e meninas perfazem cerca de 12 bilhões de horas de trabalho como cuidadoras sem remuneração em todo o mundo, todos os dias, três vezes mais que os homens. Em algumas comunidades, elas podem passar 14 horas por dia cozinhando, limpando, buscando madeira e água e cuidando de crianças e idosos.
+
+<p>Guterres destacou que os “modelos económicos classificam essas horas de "tempo de lazer".” Ele observou acrescentou que “as mulheres que têm renda têm mais probabilidade do que os homens de investir nas suas famílias e comunidades, fortalecendo as economias e tornando-as mais resilientes.”</p>
+
+<p>Para ele, “os direitos e oportunidades económicos iguais das mulheres são um imperativo global” na construção de uma “globalização justa que funcione para todos.”</p>
+<img  src="Materiais/Participantes.jpg" alt=" Participantes do evento Investimento em Igualdade em Ciência, Tecnologia e Inovação na Era da Digitalização para o Desenvolvimento Sustentável." height="339" width="560">
+<p class="direitosautor">Participantes do evento Investimento em Igualdade em Ciência, Tecnologia e Inovação na Era da Digitalização para o Desenvolvimento Sustentável. <br>Foto: ONU/Manuel Elias</p>
+</article>
+</section>
+<section id="tecnologia">
+<article>
+<h2>Tecnologia</h2>
+<p class="pclasse">A quarta área lida com a desigualdade no acesso à tecnologia digital, que para Guterres, pode ser “uma força enorme para o bem”. Ao mesmo tempo, ele disse estar “profundamente preocupado com a dominação masculina de profissões tecnológicas nas universidades, startups e Vales do Silício desse mundo.”</p>
+<p>O secretário-geral observou que “esses centros de tecnologia já estão moldando as economias e as sociedades do futuro, com um enorme impacto na evolução das relações de poder.” Para ele, a menos que as “mulheres desempenhem um papel igual no desenvolvimento de tecnologias digitais, o progresso nos direitos das mulheres pode ser revertido.”</p>
+</article>
+</section>
+<section id="Política">
+<article>
+<h2>Representação política</h2>
+<p class="pclasse">A última área foca na representação política. Guterres lembrou que a “participação das mulheres em Parlamentos em todo o mundo dobrou nos últimos 25 anos. E agora representa cerca de 25%”</p>
+<p>No entanto, menos de um décimo dos Estados são liderados por uma mulher.</p>
+<p>Guterres defende que “as mulheres no governo impulsionam o progresso social e mudanças significativas na vida das pessoas” e que elas são “mais propensas a advogar por investimentos em educação e saúde e procurar consenso entre as partes e um terreno comum.” Para ele, “as mulheres na política estão redefinindo e redistribuindo o poder” e a participação delas “melhora as instituições”.</p>
+<p>O chefe da ONU mencionou que uma de suas prioridades quando assumiu sua posição na Organização “foi trazer mais mulheres para postos de liderança” e que no primeiro dia deste ano, a paridade de género foi alcançada, “com 90 mulheres e 90 homens” nas posições de liderança sénior em tempo integral. Isso ocorreu dois anos antes da data prevista e o objetivo agora, é “alcançar a paridade em todos os níveis nos próximos anos.”</p>
+</article>
+</section>
+
+<section id="ONU">
+<article>
+<h2>Nações Unidas</h2>
+<p class="pclasse">Guterres destacou que “a igualdade de género faz parte do DNA das Nações Unidas”. Ao citar a Década de Ação para alcançar os Objetivos de Desenvolvimento Sustentável, ele lembrou que a “igualdade de género é um objetivo em si e essencial para alcançar os outros 16 objetivos.”</p>
+<p>O secretário-geral disse que nos próximos dois anos, pretende aprofundar o seu “compromisso pessoal de destacar e apoiar a igualdade de género em todas as áreas” do trabalho da organização e que explorará “formas de maximizar a influência das Nações Unidas para garantir que as mulheres tenham igual representação nos processos de paz.”</p>
+<p>Ele disse que está “comprometido em acabar com o pensamento de "homem padrão" nas Nações Unidas.”  </p>
+</article>
+</section>
+<section id="Feminismo">
+<article>
+<h2>Feminismo</h2>
+<p class="pclasse">Guterres destacou que é preciso “transformar urgentemente e redistribuir o poder” para proteger futuro e o planeta, e que é por isso que “todos os homens devem apoiar os direitos das mulheres e a igualdade de género”. Ele acrescentou que é por isso que ele mesmo é “um feminista orgulhoso”.</p>
+<p>Segundo o secretário-geral, “as mulheres igualaram e superaram os homens em quase todas as esferas e o “século 21 deve ser o século da igualdade das mulheres”.</p>
+
+<p  class="direitosautor">
+Notícia retirada de: <a href="https://news.un.org/pt/story/2020/02/1705581" target="_blank"> Nações Unidas</a></p>
+</article>
+
+</section>
+
+
+
+</main>
+
+
+
+<!---------------------------DO NOT EDIT BELOW THIS LINE-------------------------------->
+
+<section id="footer">
+	<!----------------------------------FOOTER NAVS(Template)-------------------------------->
+	<nav class="footnav">
+		<div class="socialsite">
+			<a href="https://www.facebook.com/globalgoalsUN/" target="_blank"><img src="./icons/facebook-square-brands.svg" alt="" width="20"></a>
+			<a href="https://twitter.com/globalgoalsun" target="_blank"><img src="./icons/twitter-square-brands.svg" alt="" width="20"></a>
+			<a href="https://www.instagram.com/unitednations/" target="_blank"><img src="./icons/instagram-square-brands.svg" alt="" width="20"></a>
+		</div>
+		<div>
+			<h3>Subscreva a nossa newsletter</h3>
+			<form action="http://www3.ca.ua.pt/formlist.asp" method="post">
+				<div class="subscreva">
+					<div><label for="cname" class="subscreva1">Primeiro nome</label><br>
+						<input type="text" id="cname" name="cname">
+					</div>
+					<div><label for="email" class="subscreva1">E-mail</label><br>
+						<input name="email" type="email" id="email" value="">
+					</div>
+					<div><label for="pais" class="subscreva1">País</label><br>
+						<input type="text" id="pais" name="pais">
+					</div>
+				</div>
+				<br>
+				<input type="checkbox" name="Aceito" value="Aceito" id="Aceito">
+				<label for="Aceito" class="ACEITO"> Aceito a política de privacidade</label>
+				<br>
+				<button class="subescrevabutton">Subscreva</button>
+			</form>
+		</div>
+		<div id="footerEnd">
+			<section>
+				<h3>Junta-nos</h3>
+				<ul>
+					<li><a href="INSCREVA.html">Inscreva-se</a></li>
+					<li><a href="comoajudar.html">Contribua</a></li>
+				</ul>
+				<br>
+			</section>
+
+			<section>
+				<h3>Contacta-nos</h3>
+				<a href="mailto:LutaContraDesigualdade@portugal.pt" class="email">
+					 LutaContraDesigualdade@portugal.pt</a>
+				<p class="footp">Se tiver sugestões, não hesite em contactar-nos.</p>
+			</section>
+
+			<section id="footerRight">
+				<h3>Saber mais</h3>
+				<ul>
+					<li><a href="Livro_club.html">Clube de Leitura</a></li>
+					<li><a href="Aprende_diverte.html">Aprenda e Diverte-se</a></li>
+					<li><a href="language_curiosa.html">Linguagem não Sexista</a></li>
+				</ul>
+			</section>
+		</div>
+
+		<a onclick="topFunction()" id="btnTop" class="volta-topo">↑</a>
+	</nav>
+
+	<footer>© 2021 HTML+CSS Multimédia 2 DeCA. Projeto Final</footer>
+</section>
+<script>
+	/*Back to Top*/
+	//Get the button:
+	mybutton = document.getElementById("btnTop");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () { scrollFunction() };
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+</script>
+</body>
+</html>
