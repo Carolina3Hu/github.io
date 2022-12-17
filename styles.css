@@ -181,7 +181,7 @@ p {
 	color: orange;
 }
 .email::before {
-	content: url('./icons/envelope-regular.svg');
+	content: url('./envelope-regular.svg');
 	display: inline-block;
 	width: 20px;
 	height: 20px;
@@ -279,17 +279,17 @@ footer {
 	padding: 10%;
 	display: block;
 	text-transform: uppercase;
-	background-image: url('./materiais/homepage/covid_right.png');
+	background-image: url('./covid_right.png');
 	background-size: cover;
 
 }
 .Inscreva_doar:hover {
-	background-image: url('./materiais/homepage/capa.svg');
+	background-image: url('./capa.svg');
 	background-size: contain;
 	background-color: rgba(0, 0, 0, 0.8);
 }
 .Inscreva_doar:active {
-	background-image: url('./materiais/homepage/diverse_faces.jpg');
+	background-image: url('./diverse_faces.jpg');
 	background-size: 100%;
 }
 .bg_color1 {
@@ -456,7 +456,7 @@ footer {
 }
 .AJUDA1 {
 	padding-top: 25%;
-	background-image: url('Materiais/Ajudar1.jpg');
+	background-image: url('Ajudar1.jpg');
 	background-size: cover;
 	width: 100%;
 	margin: 0;
@@ -471,7 +471,7 @@ footer {
 }
 .AJUDA2 {
 	padding-top: 5%;
-	background-image: url('Materiais/ajuda2.jpg');
+	background-image: url('ajuda2.jpg');
 	background-size: cover;
 	width: 100%;
 	margin: 0;
